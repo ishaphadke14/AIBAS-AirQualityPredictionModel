@@ -266,39 +266,37 @@ class AQIDataProcessor:
             print("Loading raw data...")
             df_raw = self.load_raw_data()
         
-        print(f"Raw data shape: {df_raw.shape}")
         
         print("Pivoting data...")
         df_pivot = self.pivot_data(df_raw)
-        print(f"After pivoting: {df_pivot.shape}")
+        
         
         print("Handling missing values...")
         df_clean = self.handle_missing_values(df_pivot)
-        print(f"After cleaning: {df_clean.shape}")
         
         print("Removing outliers...")
         df_no_outliers = self.remove_outliers(df_clean)
-        print(f"After outlier removal: {df_no_outliers.shape}")
+        
         
         print("Adding features...")
         df_features = self.add_features(df_no_outliers)
-        print(f"After feature engineering: {df_features.shape}")
+        
         
         print("Encoding categorical variables...")
         df_encoded = self.encode_categorical(df_features)
-        print(f"After encoding: {df_encoded.shape}")
+        
         
         print("Normalizing data...")
         df_normalized, scaler = self.normalize_data(df_encoded)
-        print(f"After normalization: {df_normalized.shape}")
+        
         
         print("Preparing for training...")
         features, target = self.prepare_for_training(df_normalized)
-        print(f"Features shape: {features.shape}, Target shape: {target.shape}")
+        
         
         print("Splitting data...")
         X_train, X_test, y_train, y_test = self.split_data(features, target)
-        print(f"Train shape: {X_train.shape}, Test shape: {X_test.shape}")
+        
         
         # Create joint dataset
         df_joint = df_normalized.copy()
@@ -307,17 +305,17 @@ class AQIDataProcessor:
         os.makedirs('data/processed', exist_ok=True)
         
         df_joint.to_csv('data/processed/joint_data_collection.csv', index=False)
-        print(f"✓ Saved joint_data_collection.csv with {len(df_joint)} records")
+        print(f"✓ Saved joint_data_collection.csv ")
         
         # Save training data
         train_data = pd.concat([X_train, y_train], axis=1)
         train_data.to_csv('data/processed/training_data.csv', index=False)
-        print(f"✓ Saved training_data.csv with {len(train_data)} records (80%)")
+        print(f"✓ Saved training_data.csv ")
         
         # Save test data
         test_data = pd.concat([X_test, y_test], axis=1)
         test_data.to_csv('data/processed/test_data.csv', index=False)
-        print(f"✓ Saved test_data.csv with {len(test_data)} records (20%)")
+        print(f"✓ Saved test_data.csv ")
         
         # Save one activation data entry
         activation_sample = test_data.iloc[[0]]
@@ -325,9 +323,6 @@ class AQIDataProcessor:
         print(f"✓ Saved activation_data.csv with 1 record")
         
         print(f"\nData processing complete!")
-        print(f"Total records: {len(df_joint)}")
-        print(f"Training set: {len(train_data)} records")
-        print(f"Test set: {len(test_data)} records")
         
         return {
             'X_train': X_train, 'X_test': X_test,
