@@ -1,0 +1,16 @@
+services:
+  learning_base:
+    build:
+      context: ../../  # Set the build context to the project root
+      dockerfile: images/learningBase_AirQualityIndexPredictionModel/Dockerfile
+    image: isha1401/learningbase_airqualityindexpredictionmodel
+    volumes:
+      - ai_system:/tmp
+    command:
+      - sh
+      - "-c"
+      - |
+        rm -rf /tmp/learningbase/ && cp -r /learningbase/ /tmp/;
+volumes:
+  ai_system:
+    external: true
