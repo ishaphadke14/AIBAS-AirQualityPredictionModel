@@ -63,8 +63,8 @@ history = model.fit(
 )
 
 # Save model
-os.makedirs('models', exist_ok=True)
-model.save('models/currentAiSolution.keras')
+
+model.save('D:/AIBAS-AirQualityIndexPrediction/AIBAS-AirQualityPredictionModel/code/Models/currentAiSolution.keras')
 
 # Inverse transform predictions
 y_pred_scaled = model.predict(X_test).flatten()
@@ -78,7 +78,7 @@ mae = mean_absolute_error(y_test_actual, y_pred)
 r2 = r2_score(y_test_actual, y_pred)
 
 metrics = {'mse': mse, 'rmse': rmse, 'mae': mae, 'r2': r2}
-with open('models/ai_performance_metrics.json', 'w') as f:
+with open('D:/AIBAS-AirQualityIndexPrediction/AIBAS-AirQualityPredictionModel/code/Models/ai_performance_metrics.json', 'w') as f:
     json.dump(metrics, f, indent=4)
 
 print(f"MSE: {mse:.4f}, RMSE: {rmse:.4f}, MAE: {mae:.4f}, R²: {r2:.4f}")
