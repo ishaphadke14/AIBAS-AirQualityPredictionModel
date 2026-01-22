@@ -10,7 +10,7 @@ services:
       - sh
       - "-c"
       - |
-        rm -rf /tmp/learningbase/ && cp -r /learningbase/ /tmp/;
+        rm -rf /tmp/learningbase/ && cp -r /tmp/learningBase/ /tmp/learningbase/;
 volumes:
   ai_system:
     external: true
