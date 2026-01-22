@@ -5,7 +5,7 @@ services:
       dockerfile: images/learningBase_AirQualityIndexPredictionModel/Dockerfile
     image: isha1401/learningbase_airqualityindexpredictionmodel
     volumes:
-      - ai_system:/tmp
+      - ai_system:/tmp/learningBase
     command:
       - sh
       - "-c"

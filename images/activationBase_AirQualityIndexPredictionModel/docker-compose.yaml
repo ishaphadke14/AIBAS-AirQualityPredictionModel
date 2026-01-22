@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+  activation_base:
+    build:
+      context: ../../  # Set the build context to the project root
+      dockerfile: images/activationBase_AirQualityIndexPredictionModel/Dockerfile
+    image: isha1401/activationbase_airqualityindexpredictionmodel
+    volumes:
+      - ai_system:/tmp/activationBase
+    command:
+      - sh
+      - "-c"
+      - |
+        rm -rf /tmp/activationbase/ && cp -r /tmp/activationBase/ /tmp/activationbase/;
+volumes:
+  ai_system:
+    external: true
