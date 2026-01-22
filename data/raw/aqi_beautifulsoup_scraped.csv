@@ -1,0 +1,461 @@
+timestamp,city,source,url,aqi,co,pm25,pm10,no2,o3,so2
+2025-10-25 20:21:00.881443,Delhi,historical_simulation,simulated,111.03,1.34,90.12,128.39,39.19,21.09,9.6
+2025-10-25 20:21:04.630249,Beijing,historical_simulation,simulated,163.85,2.08,143.46,214.95,58.35,42.72,14.57
+2025-10-25 20:21:07.674676,Los Angeles,historical_simulation,simulated,59.74,1.0,34.12,51.35,26.37,49.0,4.3
+2025-10-25 20:21:11.094653,London,historical_simulation,simulated,43.8,1.0,23.65,30.15,22.66,40.55,2.78
+2025-10-25 20:21:14.601773,Tokyo,historical_simulation,simulated,68.49,1.0,34.94,51.49,21.24,52.25,4.24
+2025-10-26 20:21:00.881443,Delhi,historical_simulation,simulated,183.67,1.97,157.0,206.56,58.22,28.14,15.29
+2025-10-26 20:21:04.630249,Beijing,historical_simulation,simulated,145.58,1.61,101.96,181.43,47.13,31.95,11.3
+2025-10-26 20:21:07.674676,Los Angeles,historical_simulation,simulated,67.3,1.0,40.64,65.28,29.87,51.66,5.4
+2025-10-26 20:21:11.094653,London,historical_simulation,simulated,46.21,1.0,24.67,32.84,25.19,38.25,2.93
+2025-10-26 20:21:14.601773,Tokyo,historical_simulation,simulated,74.66,1.0,33.83,57.43,23.14,52.51,4.85
+2025-10-27 20:21:00.881443,Delhi,historical_simulation,simulated,164.34,2.08,155.04,197.19,59.04,28.73,14.32
+2025-10-27 20:21:04.630249,Beijing,historical_simulation,simulated,135.06,1.72,106.82,185.07,47.63,34.9,10.98
+2025-10-27 20:21:07.674676,Los Angeles,historical_simulation,simulated,69.53,1.0,33.82,55.02,26.72,45.76,4.56
+2025-10-27 20:21:11.094653,London,historical_simulation,simulated,45.28,1.0,23.03,30.81,19.71,42.79,2.74
+2025-10-27 20:21:14.601773,Tokyo,historical_simulation,simulated,61.76,1.0,35.22,51.18,20.56,49.14,4.52
+2025-10-28 20:21:00.881443,Delhi,historical_simulation,simulated,176.4,1.96,158.73,185.32,61.89,28.44,17.58
+2025-10-28 20:21:04.630249,Beijing,historical_simulation,simulated,135.69,1.83,116.93,178.7,45.39,31.3,11.49
+2025-10-28 20:21:07.674676,Los Angeles,historical_simulation,simulated,68.94,1.0,40.58,53.96,29.83,49.16,4.38
+2025-10-28 20:21:11.094653,London,historical_simulation,simulated,58.26,1.0,27.79,39.27,29.37,45.54,3.78
+2025-10-28 20:21:14.601773,Tokyo,historical_simulation,simulated,60.56,1.0,31.07,41.38,19.48,42.53,4.09
+2025-10-29 20:21:00.881443,Delhi,historical_simulation,simulated,201.87,2.36,174.31,244.34,69.21,35.97,16.98
+2025-10-29 20:21:04.630249,Beijing,historical_simulation,simulated,132.98,1.57,109.15,160.97,44.99,33.97,11.81
+2025-10-29 20:21:07.674676,Los Angeles,historical_simulation,simulated,63.0,1.0,32.3,50.8,22.32,44.41,4.44
+2025-10-29 20:21:11.094653,London,historical_simulation,simulated,43.55,1.0,21.52,32.0,20.65,30.72,2.37
+2025-10-29 20:21:14.601466,Tokyo,historical_simulation,simulated,64.41,1.0,33.05,46.33,19.6,46.68,4.12
+2025-10-30 20:21:00.881443,Delhi,historical_simulation,simulated,201.73,2.17,176.58,215.0,67.28,34.09,17.58
+2025-10-30 20:21:04.630249,Beijing,historical_simulation,simulated,127.98,1.32,103.52,139.59,38.27,29.35,10.09
+2025-10-30 20:21:07.674676,Los Angeles,historical_simulation,simulated,86.28,1.0,53.23,69.03,37.84,59.36,5.73
+2025-10-30 20:21:11.094653,London,historical_simulation,simulated,55.44,1.0,26.32,37.93,28.75,45.23,3.34
+2025-10-30 20:21:14.601466,Tokyo,historical_simulation,simulated,60.48,1.0,29.71,39.46,18.93,47.78,3.98
+2025-10-31 20:21:00.881443,Delhi,historical_simulation,simulated,200.36,2.2,170.98,208.55,65.16,32.67,16.02
+2025-10-31 20:21:04.630249,Beijing,historical_simulation,simulated,145.23,2.09,129.91,202.3,58.11,39.68,14.65
+2025-10-31 20:21:07.674676,Los Angeles,historical_simulation,simulated,68.45,1.0,36.45,52.87,26.0,42.69,4.61
+2025-10-31 20:21:11.093653,London,historical_simulation,simulated,53.13,1.0,28.12,40.1,26.83,42.56,3.49
+2025-10-31 20:21:14.601466,Tokyo,historical_simulation,simulated,71.67,1.0,35.53,54.16,22.15,53.37,4.55
+2025-11-01 20:21:00.881443,Delhi,historical_simulation,simulated,229.69,2.58,179.73,260.12,75.06,34.65,19.3
+2025-11-01 20:21:04.630249,Beijing,historical_simulation,simulated,173.48,2.16,138.93,214.31,60.49,41.8,14.0
+2025-11-01 20:21:07.673676,Los Angeles,historical_simulation,simulated,69.89,1.0,44.68,58.66,31.85,52.73,4.82
+2025-11-01 20:21:11.093653,London,historical_simulation,simulated,40.85,1.0,22.84,29.23,19.52,33.76,2.48
+2025-11-01 20:21:14.601466,Tokyo,historical_simulation,simulated,64.03,1.0,32.26,52.32,20.79,53.77,4.38
+2025-11-02 20:21:00.881443,Delhi,historical_simulation,simulated,160.29,1.94,135.38,189.45,51.03,25.58,13.94
+2025-11-02 20:21:04.630249,Beijing,historical_simulation,simulated,165.32,1.84,132.79,187.97,50.64,35.97,12.44
+2025-11-02 20:21:07.673676,Los Angeles,historical_simulation,simulated,80.57,1.0,46.38,65.56,31.79,58.57,6.08
+2025-11-02 20:21:11.093653,London,historical_simulation,simulated,49.87,1.0,22.06,33.11,22.88,40.27,2.71
+2025-11-02 20:21:14.601466,Tokyo,historical_simulation,simulated,56.86,1.0,30.11,45.41,21.6,44.49,4.37
+2025-11-03 20:21:00.881443,Delhi,historical_simulation,simulated,183.51,1.97,155.47,217.28,62.93,30.66,14.84
+2025-11-03 20:21:04.630249,Beijing,historical_simulation,simulated,178.58,2.04,143.36,195.8,53.55,40.42,12.82
+2025-11-03 20:21:07.673676,Los Angeles,historical_simulation,simulated,84.66,1.0,47.04,65.88,37.76,60.69,6.18
+2025-11-03 20:21:11.093653,London,historical_simulation,simulated,54.49,1.0,29.7,38.11,25.7,45.64,3.44
+2025-11-03 20:21:14.601466,Tokyo,historical_simulation,simulated,53.71,1.0,29.2,40.86,17.73,36.93,3.38
+2025-11-04 20:21:00.881443,Delhi,historical_simulation,simulated,188.53,1.84,164.92,194.56,58.14,30.67,14.53
+2025-11-04 20:21:04.630249,Beijing,historical_simulation,simulated,137.22,1.63,104.37,159.29,43.87,28.92,10.45
+2025-11-04 20:21:07.673676,Los Angeles,historical_simulation,simulated,94.4,1.12,50.25,79.15,38.73,64.41,6.74
+2025-11-04 20:21:11.093653,London,historical_simulation,simulated,40.66,1.0,22.96,30.38,23.1,35.31,2.36
+2025-11-04 20:21:14.601466,Tokyo,historical_simulation,simulated,66.43,1.0,33.53,49.03,22.44,47.2,4.42
+2025-11-05 20:21:00.881443,Delhi,historical_simulation,simulated,195.57,2.33,167.45,221.13,72.36,34.53,17.9
+2025-11-05 20:21:04.630249,Beijing,historical_simulation,simulated,138.83,1.77,115.58,172.97,50.16,32.15,12.58
+2025-11-05 20:21:07.673676,Los Angeles,historical_simulation,simulated,66.02,1.0,38.04,61.19,31.66,45.58,5.13
+2025-11-05 20:21:11.093653,London,historical_simulation,simulated,40.57,1.0,23.39,27.58,21.13,34.4,2.59
+2025-11-05 20:21:14.601466,Tokyo,historical_simulation,simulated,55.04,1.0,26.7,34.58,17.24,37.0,3.32
+2025-11-06 20:21:00.881443,Delhi,historical_simulation,simulated,180.63,1.93,141.28,190.5,62.76,31.17,16.33
+2025-11-06 20:21:04.630249,Beijing,historical_simulation,simulated,153.24,1.78,116.83,165.67,48.61,37.39,12.75
+2025-11-06 20:21:07.673676,Los Angeles,historical_simulation,simulated,77.16,1.0,41.91,69.53,33.63,60.91,5.87
+2025-11-06 20:21:11.093653,London,historical_simulation,simulated,36.73,1.0,18.34,25.9,17.8,28.99,2.25
+2025-11-06 20:21:14.601466,Tokyo,historical_simulation,simulated,59.14,1.0,27.75,47.02,20.31,41.02,4.15
+2025-11-07 20:21:00.881443,Delhi,historical_simulation,simulated,222.5,2.64,191.92,252.44,80.25,38.93,20.26
+2025-11-07 20:21:04.630249,Beijing,historical_simulation,simulated,133.33,1.52,105.96,148.17,40.6,28.29,10.36
+2025-11-07 20:21:07.673676,Los Angeles,historical_simulation,simulated,53.21,1.0,36.19,49.92,27.23,42.33,3.83
+2025-11-07 20:21:11.093653,London,historical_simulation,simulated,49.61,1.0,26.08,36.94,27.58,41.79,3.09
+2025-11-07 20:21:14.601466,Tokyo,historical_simulation,simulated,63.16,1.0,29.29,43.92,20.87,48.18,4.14
+2025-11-08 20:21:00.881443,Delhi,historical_simulation,simulated,208.42,2.37,185.73,242.97,68.16,36.53,16.94
+2025-11-08 20:21:04.630249,Beijing,historical_simulation,simulated,153.18,1.84,109.17,185.02,43.15,32.47,11.54
+2025-11-08 20:21:07.673676,Los Angeles,historical_simulation,simulated,78.97,1.0,45.32,69.57,35.06,53.14,5.58
+2025-11-08 20:21:11.093653,London,historical_simulation,simulated,40.19,1.0,21.29,24.42,19.88,35.69,2.71
+2025-11-08 20:21:14.601466,Tokyo,historical_simulation,simulated,47.74,1.0,27.07,41.77,18.5,41.11,3.84
+2025-11-09 20:21:00.880445,Delhi,historical_simulation,simulated,191.87,1.88,158.87,214.64,58.88,29.17,13.78
+2025-11-09 20:21:04.630249,Beijing,historical_simulation,simulated,127.32,1.45,103.57,132.35,42.43,28.8,8.68
+2025-11-09 20:21:07.673676,Los Angeles,historical_simulation,simulated,65.86,1.0,35.39,50.97,25.34,46.98,4.37
+2025-11-09 20:21:11.093653,London,historical_simulation,simulated,61.17,1.0,30.56,38.76,28.39,46.3,3.59
+2025-11-09 20:21:14.599956,Tokyo,historical_simulation,simulated,68.61,1.0,31.91,49.95,21.96,53.8,4.69
+2025-11-10 20:21:00.880445,Delhi,historical_simulation,simulated,152.71,1.77,131.92,144.0,54.77,26.65,12.02
+2025-11-10 20:21:04.630249,Beijing,historical_simulation,simulated,192.22,2.6,146.77,257.78,68.42,47.26,16.48
+2025-11-10 20:21:07.673676,Los Angeles,historical_simulation,simulated,72.15,1.0,39.02,63.19,30.12,53.4,5.28
+2025-11-10 20:21:11.093653,London,historical_simulation,simulated,46.55,1.0,22.86,30.31,23.03,36.82,2.75
+2025-11-10 20:21:14.599956,Tokyo,historical_simulation,simulated,54.44,1.0,26.4,38.01,16.9,38.82,3.51
+2025-11-11 20:21:00.880445,Delhi,historical_simulation,simulated,159.17,1.92,138.22,201.07,55.56,26.53,13.5
+2025-11-11 20:21:04.630249,Beijing,historical_simulation,simulated,183.15,2.24,146.31,204.83,58.71,42.11,13.79
+2025-11-11 20:21:07.673676,Los Angeles,historical_simulation,simulated,65.17,1.0,33.83,55.86,25.83,50.58,4.37
+2025-11-11 20:21:11.093653,London,historical_simulation,simulated,58.75,1.0,29.24,37.28,26.37,48.03,3.55
+2025-11-11 20:21:14.599956,Tokyo,historical_simulation,simulated,71.87,1.0,35.16,52.56,22.01,48.42,4.53
+2025-11-12 20:21:00.880445,Delhi,historical_simulation,simulated,174.48,1.95,129.55,190.21,50.22,24.27,13.84
+2025-11-12 20:21:04.629249,Beijing,historical_simulation,simulated,186.72,1.97,139.24,225.31,59.54,43.57,14.37
+2025-11-12 20:21:07.673676,Los Angeles,historical_simulation,simulated,70.26,1.0,37.79,62.28,30.22,46.0,5.45
+2025-11-12 20:21:11.093653,London,historical_simulation,simulated,53.46,1.0,27.46,38.13,26.85,45.39,3.48
+2025-11-12 20:21:14.599956,Tokyo,historical_simulation,simulated,52.26,1.0,26.26,37.56,16.67,41.29,3.31
+2025-11-13 20:21:00.880445,Delhi,historical_simulation,simulated,170.94,1.71,139.53,191.89,50.11,26.27,14.37
+2025-11-13 20:21:04.629249,Beijing,historical_simulation,simulated,141.6,1.91,125.45,176.55,49.52,34.61,12.02
+2025-11-13 20:21:07.673676,Los Angeles,historical_simulation,simulated,57.92,1.0,26.03,37.93,20.33,34.19,3.31
+2025-11-13 20:21:11.093653,London,historical_simulation,simulated,38.62,1.0,20.84,27.57,18.54,32.32,2.78
+2025-11-13 20:21:14.599956,Tokyo,historical_simulation,simulated,58.7,1.0,30.07,43.28,18.03,44.25,3.87
+2025-11-14 20:21:00.880445,Delhi,historical_simulation,simulated,194.36,2.13,153.86,205.54,68.83,32.38,14.74
+2025-11-14 20:21:04.629249,Beijing,historical_simulation,simulated,134.56,1.68,110.67,169.15,49.52,33.97,11.13
+2025-11-14 20:21:07.673676,Los Angeles,historical_simulation,simulated,67.19,1.0,36.33,56.42,27.48,43.5,4.51
+2025-11-14 20:21:11.093653,London,historical_simulation,simulated,45.92,1.0,21.08,33.42,21.99,33.5,2.62
+2025-11-14 20:21:14.599956,Tokyo,historical_simulation,simulated,62.91,1.0,35.87,50.44,22.84,42.72,4.41
+2025-11-15 20:21:00.880445,Delhi,historical_simulation,simulated,180.02,1.99,158.28,236.94,63.7,34.06,16.03
+2025-11-15 20:21:04.629249,Beijing,historical_simulation,simulated,134.45,1.69,103.86,155.53,44.64,30.62,11.5
+2025-11-15 20:21:07.673676,Los Angeles,historical_simulation,simulated,67.7,1.0,36.18,62.85,28.29,45.09,4.6
+2025-11-15 20:21:11.093653,London,historical_simulation,simulated,35.79,1.0,20.87,25.61,20.31,30.86,2.03
+2025-11-15 20:21:14.599956,Tokyo,historical_simulation,simulated,42.73,1.0,21.34,24.84,11.21,25.8,2.52
+2025-11-16 20:21:00.880445,Delhi,historical_simulation,simulated,199.73,2.29,180.23,234.86,70.68,37.68,18.09
+2025-11-16 20:21:04.629249,Beijing,historical_simulation,simulated,133.07,1.5,105.24,159.7,44.04,31.28,10.17
+2025-11-16 20:21:07.673676,Los Angeles,historical_simulation,simulated,69.05,1.0,40.47,59.26,30.74,49.91,4.96
+2025-11-16 20:21:11.093653,London,historical_simulation,simulated,48.7,1.0,24.49,37.81,25.71,40.41,3.08
+2025-11-16 20:21:14.599956,Tokyo,historical_simulation,simulated,62.29,1.0,30.41,49.63,20.46,50.36,4.19
+2025-11-17 20:21:00.880445,Delhi,historical_simulation,simulated,180.91,1.91,150.21,207.62,63.57,31.63,14.77
+2025-11-17 20:21:04.629249,Beijing,historical_simulation,simulated,147.26,1.66,103.25,145.76,43.21,29.89,11.96
+2025-11-17 20:21:07.673676,Los Angeles,historical_simulation,simulated,76.71,1.0,39.89,68.04,30.07,55.99,5.58
+2025-11-17 20:21:11.093653,London,historical_simulation,simulated,52.99,1.0,25.98,37.39,26.6,40.59,2.93
+2025-11-17 20:21:14.599956,Tokyo,historical_simulation,simulated,67.58,1.0,30.49,44.04,19.13,44.68,4.18
+2025-11-18 20:21:00.880445,Delhi,historical_simulation,simulated,211.0,2.51,167.66,226.28,71.3,35.27,18.37
+2025-11-18 20:21:04.629249,Beijing,historical_simulation,simulated,144.54,1.68,119.01,171.68,43.21,33.26,11.97
+2025-11-18 20:21:07.673676,Los Angeles,historical_simulation,simulated,67.51,1.0,38.47,49.33,28.61,47.28,4.93
+2025-11-18 20:21:11.093653,London,historical_simulation,simulated,43.09,1.0,23.4,32.77,19.6,41.3,2.71
+2025-11-18 20:21:14.599956,Tokyo,historical_simulation,simulated,70.13,1.0,34.36,53.37,24.82,52.04,4.75
+2025-11-19 20:21:00.880445,Delhi,historical_simulation,simulated,211.43,2.33,180.41,232.23,72.91,35.29,17.7
+2025-11-19 20:21:04.629249,Beijing,historical_simulation,simulated,161.58,1.8,123.77,167.37,52.32,33.33,11.8
+2025-11-19 20:21:07.673676,Los Angeles,historical_simulation,simulated,42.0,1.0,21.01,32.88,20.97,25.99,3.19
+2025-11-19 20:21:11.093653,London,historical_simulation,simulated,54.58,1.0,28.74,40.07,27.17,49.08,3.47
+2025-11-19 20:21:14.599956,Tokyo,historical_simulation,simulated,57.76,1.0,30.91,48.38,20.38,42.81,4.18
+2025-11-20 20:21:00.880445,Delhi,historical_simulation,simulated,154.93,1.89,131.3,168.73,51.77,24.54,11.36
+2025-11-20 20:21:04.629249,Beijing,historical_simulation,simulated,161.33,1.97,131.98,199.63,59.73,40.88,15.2
+2025-11-20 20:21:07.673676,Los Angeles,historical_simulation,simulated,49.89,1.0,31.72,46.89,22.79,39.49,3.93
+2025-11-20 20:21:11.093653,London,historical_simulation,simulated,53.45,1.0,30.61,37.89,29.08,42.61,3.34
+2025-11-20 20:21:14.599956,Tokyo,historical_simulation,simulated,52.52,1.0,26.54,41.92,17.34,39.39,3.37
+2025-11-21 20:21:00.880445,Delhi,historical_simulation,simulated,157.98,1.89,128.02,166.76,53.32,26.91,13.13
+2025-11-21 20:21:04.629249,Beijing,historical_simulation,simulated,126.69,1.44,103.41,161.39,47.01,28.97,10.66
+2025-11-21 20:21:07.673676,Los Angeles,historical_simulation,simulated,62.9,1.0,37.33,49.95,25.53,41.39,4.21
+2025-11-21 20:21:11.093653,London,historical_simulation,simulated,42.16,1.0,23.37,33.29,22.39,35.69,2.69
+2025-11-21 20:21:14.599956,Tokyo,historical_simulation,simulated,44.68,1.0,25.64,32.1,15.35,35.63,3.19
+2025-11-22 20:21:00.880445,Delhi,historical_simulation,simulated,220.49,2.38,192.89,234.65,65.22,36.36,17.37
+2025-11-22 20:21:04.629249,Beijing,historical_simulation,simulated,146.17,1.7,101.55,155.75,45.82,33.04,10.69
+2025-11-22 20:21:07.673676,Los Angeles,historical_simulation,simulated,73.75,1.0,40.29,66.64,30.12,54.71,5.43
+2025-11-22 20:21:11.093653,London,historical_simulation,simulated,36.22,1.0,22.15,30.31,22.86,35.21,2.35
+2025-11-22 20:21:14.599956,Tokyo,historical_simulation,simulated,52.38,1.0,26.63,40.07,17.11,35.8,3.34
+2025-11-23 20:21:00.880445,Delhi,historical_simulation,simulated,164.64,1.77,141.75,193.29,56.06,27.96,14.14
+2025-11-23 20:21:04.629249,Beijing,historical_simulation,simulated,99.63,1.15,66.38,98.74,26.6,20.2,6.99
+2025-11-23 20:21:07.673676,Los Angeles,historical_simulation,simulated,46.62,1.0,31.36,43.9,23.46,35.06,3.55
+2025-11-23 20:21:11.093653,London,historical_simulation,simulated,58.16,1.0,28.72,37.8,29.39,40.58,3.33
+2025-11-23 20:21:14.599956,Tokyo,historical_simulation,simulated,59.56,1.0,30.35,45.49,21.88,44.24,4.25
+2025-11-24 20:21:00.880445,Delhi,historical_simulation,simulated,150.61,1.6,130.96,136.41,42.09,22.03,12.25
+2025-11-24 20:21:04.629249,Beijing,historical_simulation,simulated,104.18,1.27,97.49,124.06,36.36,24.26,8.39
+2025-11-24 20:21:07.673676,Los Angeles,historical_simulation,simulated,76.87,1.0,43.42,66.84,32.72,53.97,5.51
+2025-11-24 20:21:11.093653,London,historical_simulation,simulated,43.28,1.0,22.49,30.55,22.89,37.0,2.57
+2025-11-24 20:21:14.599956,Tokyo,historical_simulation,simulated,62.92,1.0,33.21,50.51,20.17,48.29,4.28
+2025-11-25 20:21:00.880445,Delhi,historical_simulation,simulated,167.92,1.73,132.88,184.72,60.37,29.83,13.32
+2025-11-25 20:21:04.629249,Beijing,historical_simulation,simulated,154.84,1.73,120.51,180.52,49.93,35.02,13.17
+2025-11-25 20:21:07.673676,Los Angeles,historical_simulation,simulated,68.29,1.0,37.39,60.85,29.11,41.61,4.34
+2025-11-25 20:21:11.093653,London,historical_simulation,simulated,49.41,1.0,24.83,34.27,25.83,41.17,2.72
+2025-11-25 20:21:14.599956,Tokyo,historical_simulation,simulated,71.77,1.0,37.43,50.61,23.14,55.66,5.23
+2025-11-26 20:21:00.880445,Delhi,historical_simulation,simulated,199.31,2.23,153.26,212.49,67.37,31.62,15.64
+2025-11-26 20:21:04.629249,Beijing,historical_simulation,simulated,134.15,1.51,96.36,165.74,41.94,27.67,10.54
+2025-11-26 20:21:07.673676,Los Angeles,historical_simulation,simulated,63.2,1.0,38.47,59.04,26.1,47.47,4.75
+2025-11-26 20:21:11.093653,London,historical_simulation,simulated,60.2,1.0,22.8,36.71,28.0,45.06,3.24
+2025-11-26 20:21:14.599956,Tokyo,historical_simulation,simulated,63.38,1.0,31.22,52.96,22.23,53.65,4.7
+2025-11-27 20:21:00.880445,Delhi,historical_simulation,simulated,230.76,2.45,196.34,225.57,75.87,36.4,18.61
+2025-11-27 20:21:04.629249,Beijing,historical_simulation,simulated,179.84,2.43,142.33,218.04,58.9,45.08,15.13
+2025-11-27 20:21:07.673676,Los Angeles,historical_simulation,simulated,88.82,1.0,46.99,75.63,36.48,56.05,6.38
+2025-11-27 20:21:11.093653,London,historical_simulation,simulated,44.94,1.0,20.8,30.98,22.54,35.43,2.75
+2025-11-27 20:21:14.599956,Tokyo,historical_simulation,simulated,70.17,1.0,34.31,53.42,24.34,51.46,4.63
+2025-11-28 20:21:00.880445,Delhi,historical_simulation,simulated,151.5,1.77,105.86,171.14,58.26,25.71,12.97
+2025-11-28 20:21:04.629249,Beijing,historical_simulation,simulated,173.5,1.91,114.78,194.56,50.38,34.69,12.78
+2025-11-28 20:21:07.673676,Los Angeles,historical_simulation,simulated,65.54,1.0,35.98,59.27,27.76,42.67,4.91
+2025-11-28 20:21:11.093653,London,historical_simulation,simulated,65.16,1.0,33.32,45.29,36.0,55.04,3.99
+2025-11-28 20:21:14.599956,Tokyo,historical_simulation,simulated,67.94,1.0,33.41,51.38,23.4,49.75,4.37
+2025-11-29 20:21:00.880445,Delhi,historical_simulation,simulated,196.15,2.03,150.91,214.75,62.94,30.34,16.5
+2025-11-29 20:21:04.629249,Beijing,historical_simulation,simulated,151.01,1.82,111.69,172.71,46.81,32.88,11.64
+2025-11-29 20:21:07.673676,Los Angeles,historical_simulation,simulated,78.73,1.0,43.05,70.41,34.26,55.6,5.75
+2025-11-29 20:21:11.093653,London,historical_simulation,simulated,41.96,1.0,21.98,31.34,22.2,37.01,2.55
+2025-11-29 20:21:14.599956,Tokyo,historical_simulation,simulated,59.05,1.0,27.75,41.85,21.01,50.88,3.8
+2025-11-30 20:21:00.880445,Delhi,historical_simulation,simulated,128.02,1.56,126.31,164.39,43.52,23.65,12.5
+2025-11-30 20:21:04.629249,Beijing,historical_simulation,simulated,147.85,1.81,129.39,160.78,52.22,37.97,11.84
+2025-11-30 20:21:07.673676,Los Angeles,historical_simulation,simulated,76.65,1.0,47.1,75.7,35.18,61.22,6.19
+2025-11-30 20:21:11.093653,London,historical_simulation,simulated,51.93,1.0,26.98,40.06,25.54,43.19,3.23
+2025-11-30 20:21:14.599956,Tokyo,historical_simulation,simulated,52.86,1.0,24.87,38.97,16.96,37.97,3.28
+2025-12-01 20:21:00.880445,Delhi,historical_simulation,simulated,274.41,3.15,229.11,288.58,91.09,45.38,23.13
+2025-12-01 20:21:04.629249,Beijing,historical_simulation,simulated,216.13,2.61,172.99,263.85,70.52,51.72,17.16
+2025-12-01 20:21:07.673676,Los Angeles,historical_simulation,simulated,99.83,1.15,56.55,87.92,42.37,76.49,7.01
+2025-12-01 20:21:11.093653,London,historical_simulation,simulated,48.28,1.0,23.23,32.52,26.14,38.4,2.74
+2025-12-01 20:21:14.599956,Tokyo,historical_simulation,simulated,61.25,1.0,30.66,49.36,20.7,47.51,4.03
+2025-12-02 20:21:00.880445,Delhi,historical_simulation,simulated,249.19,2.77,199.03,280.99,81.11,41.44,21.25
+2025-12-02 20:21:04.629249,Beijing,historical_simulation,simulated,212.99,2.57,178.27,280.65,70.52,50.24,17.84
+2025-12-02 20:21:07.673676,Los Angeles,historical_simulation,simulated,77.54,1.0,48.54,64.08,33.46,60.8,5.79
+2025-12-02 20:21:11.093653,London,historical_simulation,simulated,66.43,1.0,31.95,47.04,31.93,50.8,3.88
+2025-12-02 20:21:14.599956,Tokyo,historical_simulation,simulated,71.05,1.0,38.77,52.89,25.95,53.79,4.98
+2025-12-03 20:21:00.880445,Delhi,historical_simulation,simulated,252.52,2.71,209.99,285.09,82.06,42.71,22.63
+2025-12-03 20:21:04.629249,Beijing,historical_simulation,simulated,167.62,2.07,128.62,188.43,56.13,36.54,12.66
+2025-12-03 20:21:07.672684,Los Angeles,historical_simulation,simulated,113.61,1.28,66.97,96.1,50.83,82.96,7.97
+2025-12-03 20:21:11.093653,London,historical_simulation,simulated,67.14,1.0,35.52,48.85,32.26,50.78,4.04
+2025-12-03 20:21:14.599956,Tokyo,historical_simulation,simulated,69.59,1.0,34.93,54.15,23.04,52.47,4.85
+2025-12-04 20:21:00.880445,Delhi,historical_simulation,simulated,226.63,2.5,189.31,254.04,76.63,37.63,18.96
+2025-12-04 20:21:04.629249,Beijing,historical_simulation,simulated,164.41,1.9,132.54,202.89,53.21,40.1,13.14
+2025-12-04 20:21:07.672684,Los Angeles,historical_simulation,simulated,76.32,1.0,49.39,68.87,34.4,56.38,5.78
+2025-12-04 20:21:11.093653,London,historical_simulation,simulated,66.11,1.0,32.54,44.65,32.12,51.46,3.82
+2025-12-04 20:21:14.599956,Tokyo,historical_simulation,simulated,73.24,1.0,35.88,54.58,24.76,55.05,4.82
+2025-12-05 20:21:00.880445,Delhi,historical_simulation,simulated,193.95,2.22,158.87,229.89,72.95,34.62,16.79
+2025-12-05 20:21:04.629249,Beijing,historical_simulation,simulated,151.43,1.97,127.73,206.41,56.49,39.85,13.51
+2025-12-05 20:21:07.672684,Los Angeles,historical_simulation,simulated,99.58,1.02,56.04,82.34,42.46,73.49,6.96
+2025-12-05 20:21:11.092663,London,historical_simulation,simulated,69.1,1.0,36.65,48.01,35.54,55.71,4.15
+2025-12-05 20:21:14.599956,Tokyo,historical_simulation,simulated,68.85,1.0,32.97,50.24,20.19,47.87,4.45
+2025-12-06 20:21:00.880445,Delhi,historical_simulation,simulated,231.78,2.45,206.21,269.35,77.89,38.8,20.01
+2025-12-06 20:21:04.629249,Beijing,historical_simulation,simulated,168.03,2.07,147.47,212.2,59.61,40.3,13.11
+2025-12-06 20:21:07.672684,Los Angeles,historical_simulation,simulated,116.75,1.34,70.17,102.0,52.11,86.28,8.39
+2025-12-06 20:21:11.092663,London,historical_simulation,simulated,66.97,1.0,34.64,44.99,33.99,49.52,3.72
+2025-12-06 20:21:14.599956,Tokyo,historical_simulation,simulated,49.89,1.0,22.93,39.36,16.15,33.55,2.92
+2025-12-07 20:21:00.880445,Delhi,historical_simulation,simulated,272.72,3.09,214.11,282.86,92.12,45.85,23.58
+2025-12-07 20:21:04.629249,Beijing,historical_simulation,simulated,143.8,1.78,116.37,186.35,45.51,33.78,11.88
+2025-12-07 20:21:07.672684,Los Angeles,historical_simulation,simulated,67.36,1.0,40.41,62.03,30.43,50.66,4.95
+2025-12-07 20:21:11.092663,London,historical_simulation,simulated,71.71,1.0,36.43,49.69,35.09,58.26,4.29
+2025-12-07 20:21:14.599956,Tokyo,historical_simulation,simulated,62.9,1.0,31.42,50.07,20.16,53.67,3.98
+2025-12-08 20:21:00.880445,Delhi,historical_simulation,simulated,201.33,2.07,165.35,217.7,64.26,30.14,15.76
+2025-12-08 20:21:04.629249,Beijing,historical_simulation,simulated,180.8,2.08,131.73,208.05,55.55,40.71,14.25
+2025-12-08 20:21:07.672684,Los Angeles,historical_simulation,simulated,92.45,1.03,51.86,79.21,37.36,64.89,6.66
+2025-12-08 20:21:11.092663,London,historical_simulation,simulated,64.95,1.0,32.96,43.09,30.17,50.34,3.91
+2025-12-08 20:21:14.599956,Tokyo,historical_simulation,simulated,87.78,1.0,50.09,69.88,29.8,70.49,6.31
+2025-12-09 20:21:00.880445,Delhi,historical_simulation,simulated,197.45,2.07,151.46,202.44,62.67,29.78,15.43
+2025-12-09 20:21:04.629249,Beijing,historical_simulation,simulated,185.76,1.96,141.18,203.37,60.03,40.19,13.86
+2025-12-09 20:21:07.672684,Los Angeles,historical_simulation,simulated,108.2,1.27,63.59,95.61,45.53,78.39,7.97
+2025-12-09 20:21:11.092663,London,historical_simulation,simulated,67.32,1.0,34.01,48.51,33.94,53.62,4.04
+2025-12-09 20:21:14.599956,Tokyo,historical_simulation,simulated,81.62,1.0,41.59,63.3,27.04,60.44,5.89
+2025-12-10 20:21:00.880445,Delhi,historical_simulation,simulated,196.04,2.18,157.39,225.84,69.5,33.55,17.28
+2025-12-10 20:21:04.629249,Beijing,historical_simulation,simulated,241.22,2.73,190.01,275.71,79.62,54.05,19.16
+2025-12-10 20:21:07.672684,Los Angeles,historical_simulation,simulated,63.41,1.0,32.09,48.79,26.74,42.69,4.39
+2025-12-10 20:21:11.092663,London,historical_simulation,simulated,57.45,1.0,27.81,40.17,26.54,45.68,3.43
+2025-12-10 20:21:14.599956,Tokyo,historical_simulation,simulated,73.26,1.0,36.86,55.23,26.8,56.06,5.09
+2025-12-11 20:21:00.880445,Delhi,historical_simulation,simulated,270.93,3.01,214.16,285.2,82.21,42.17,20.73
+2025-12-11 20:21:04.629249,Beijing,historical_simulation,simulated,215.77,2.6,165.27,252.32,75.1,51.17,18.76
+2025-12-11 20:21:07.672684,Los Angeles,historical_simulation,simulated,105.05,1.15,63.81,85.16,44.74,74.2,7.5
+2025-12-11 20:21:11.092663,London,historical_simulation,simulated,67.17,1.0,34.9,43.77,34.67,54.47,3.88
+2025-12-11 20:21:14.599956,Tokyo,historical_simulation,simulated,57.04,1.0,31.99,48.75,20.53,47.07,3.88
+2025-12-12 20:21:00.880445,Delhi,historical_simulation,simulated,246.94,2.75,210.28,290.84,87.5,44.07,21.94
+2025-12-12 20:21:04.629249,Beijing,historical_simulation,simulated,230.31,2.89,174.75,258.05,75.63,53.52,17.25
+2025-12-12 20:21:07.672684,Los Angeles,historical_simulation,simulated,74.52,1.0,42.5,66.24,34.26,54.59,5.34
+2025-12-12 20:21:11.092663,London,historical_simulation,simulated,68.98,1.0,35.05,47.17,33.76,53.77,3.92
+2025-12-12 20:21:14.599956,Tokyo,historical_simulation,simulated,87.7,1.0,44.76,61.5,29.47,67.5,6.37
+2025-12-13 20:21:00.879434,Delhi,historical_simulation,simulated,160.52,2.02,138.4,211.19,57.68,25.03,13.59
+2025-12-13 20:21:04.629249,Beijing,historical_simulation,simulated,153.06,1.9,127.83,197.85,52.63,35.88,10.74
+2025-12-13 20:21:07.672684,Los Angeles,historical_simulation,simulated,109.77,1.18,60.11,93.78,46.02,77.84,7.88
+2025-12-13 20:21:11.092663,London,historical_simulation,simulated,66.92,1.0,32.15,45.88,32.05,52.51,3.78
+2025-12-13 20:21:14.599956,Tokyo,historical_simulation,simulated,86.28,1.0,39.53,63.22,27.57,64.38,5.75
+2025-12-14 20:21:00.879434,Delhi,historical_simulation,simulated,203.5,2.09,161.11,211.31,66.16,32.54,16.28
+2025-12-14 20:21:04.629249,Beijing,historical_simulation,simulated,221.65,2.67,166.01,247.83,71.78,48.69,17.15
+2025-12-14 20:21:07.672684,Los Angeles,historical_simulation,simulated,100.14,1.2,59.26,90.46,43.67,71.31,7.02
+2025-12-14 20:21:11.092663,London,historical_simulation,simulated,71.3,1.0,38.18,49.14,36.86,57.1,4.24
+2025-12-14 20:21:14.599956,Tokyo,historical_simulation,simulated,80.57,1.0,40.99,59.05,25.82,57.12,5.09
+2025-12-15 20:21:00.879434,Delhi,historical_simulation,simulated,243.92,2.72,210.4,280.46,79.57,41.12,20.93
+2025-12-15 20:21:04.629249,Beijing,historical_simulation,simulated,184.12,2.23,149.18,204.01,60.67,43.27,14.65
+2025-12-15 20:21:07.672684,Los Angeles,historical_simulation,simulated,89.42,1.06,55.37,79.3,37.55,57.76,6.05
+2025-12-15 20:21:11.092663,London,historical_simulation,simulated,59.07,1.0,27.14,39.89,30.13,44.73,3.51
+2025-12-15 20:21:14.599956,Tokyo,historical_simulation,simulated,54.54,1.0,23.16,41.49,17.69,43.43,3.76
+2025-12-16 20:21:00.879434,Delhi,historical_simulation,simulated,204.91,2.43,161.59,209.0,62.2,30.73,16.09
+2025-12-16 20:21:04.628247,Beijing,historical_simulation,simulated,208.63,2.47,174.5,263.22,68.51,45.53,16.0
+2025-12-16 20:21:07.672684,Los Angeles,historical_simulation,simulated,120.11,1.31,68.63,100.1,51.71,86.76,8.4
+2025-12-16 20:21:11.092663,London,historical_simulation,simulated,62.49,1.0,29.85,45.23,32.7,49.01,3.66
+2025-12-16 20:21:14.599956,Tokyo,historical_simulation,simulated,81.75,1.0,39.7,62.61,28.19,59.84,5.52
+2025-12-17 20:21:00.879434,Delhi,historical_simulation,simulated,243.79,2.65,191.77,263.56,77.8,41.78,19.0
+2025-12-17 20:21:04.628247,Beijing,historical_simulation,simulated,175.31,2.05,150.85,224.65,58.17,42.24,15.48
+2025-12-17 20:21:07.672684,Los Angeles,historical_simulation,simulated,86.95,1.0,52.54,81.15,37.88,64.2,6.4
+2025-12-17 20:21:11.092663,London,historical_simulation,simulated,82.24,1.0,41.17,58.65,40.25,66.08,4.67
+2025-12-17 20:21:14.599956,Tokyo,historical_simulation,simulated,73.26,1.0,35.34,54.87,24.68,57.42,4.93
+2025-12-18 20:21:00.879434,Delhi,historical_simulation,simulated,203.62,2.37,177.11,224.2,66.8,31.66,16.88
+2025-12-18 20:21:04.628247,Beijing,historical_simulation,simulated,188.29,2.15,136.64,207.71,63.34,45.23,15.46
+2025-12-18 20:21:07.672684,Los Angeles,historical_simulation,simulated,100.71,1.22,58.19,88.74,47.79,69.56,7.72
+2025-12-18 20:21:11.092663,London,historical_simulation,simulated,73.4,1.0,35.42,50.03,36.22,59.38,4.16
+2025-12-18 20:21:14.599956,Tokyo,historical_simulation,simulated,62.96,1.0,32.01,50.13,22.84,51.47,4.34
+2025-12-19 20:21:00.879434,Delhi,historical_simulation,simulated,226.47,2.49,178.9,243.13,67.28,37.74,19.42
+2025-12-19 20:21:04.628247,Beijing,historical_simulation,simulated,219.04,2.83,170.97,276.27,78.1,51.66,18.13
+2025-12-19 20:21:07.672684,Los Angeles,historical_simulation,simulated,89.34,1.16,54.36,82.66,40.29,67.67,6.9
+2025-12-19 20:21:11.092663,London,historical_simulation,simulated,58.23,1.0,28.75,40.65,30.17,48.9,3.61
+2025-12-19 20:21:14.599956,Tokyo,historical_simulation,simulated,72.43,1.0,32.97,54.72,23.85,53.28,5.11
+2025-12-20 20:21:00.879434,Delhi,historical_simulation,simulated,178.4,1.83,158.53,174.07,58.63,26.26,15.66
+2025-12-20 20:21:04.628247,Beijing,historical_simulation,simulated,254.58,3.02,200.44,303.31,84.99,57.35,19.89
+2025-12-20 20:21:07.672684,Los Angeles,historical_simulation,simulated,80.22,1.0,43.83,70.77,33.73,52.31,5.64
+2025-12-20 20:21:11.092663,London,historical_simulation,simulated,76.86,1.0,40.14,54.84,37.87,64.77,4.55
+2025-12-20 20:21:14.599956,Tokyo,historical_simulation,simulated,72.71,1.0,36.63,52.78,23.64,50.95,4.56
+2025-12-21 20:21:00.879434,Delhi,historical_simulation,simulated,233.83,2.48,185.54,247.83,75.37,38.81,19.25
+2025-12-21 20:21:04.628247,Beijing,historical_simulation,simulated,275.38,3.1,205.56,309.56,84.91,61.86,22.54
+2025-12-21 20:21:07.672684,Los Angeles,historical_simulation,simulated,75.87,1.0,45.12,74.28,35.64,60.97,6.08
+2025-12-21 20:21:11.092663,London,historical_simulation,simulated,47.5,1.0,24.49,31.05,24.7,43.27,2.88
+2025-12-21 20:21:14.599956,Tokyo,historical_simulation,simulated,81.39,1.0,37.01,58.24,26.75,60.54,5.35
+2025-12-22 20:21:00.879434,Delhi,historical_simulation,simulated,232.24,2.21,187.3,238.52,74.0,36.66,16.77
+2025-12-22 20:21:04.628247,Beijing,historical_simulation,simulated,195.36,2.28,147.71,226.02,59.83,45.97,14.65
+2025-12-22 20:21:07.672684,Los Angeles,historical_simulation,simulated,61.26,1.0,35.12,50.15,26.71,40.83,4.16
+2025-12-22 20:21:11.092663,London,historical_simulation,simulated,63.92,1.0,32.89,47.92,33.57,55.87,3.92
+2025-12-22 20:21:14.599956,Tokyo,historical_simulation,simulated,69.09,1.0,36.35,54.69,21.53,55.48,4.68
+2025-12-23 20:21:00.879434,Delhi,historical_simulation,simulated,220.31,2.38,166.72,245.84,74.14,36.95,18.54
+2025-12-23 20:21:04.628247,Beijing,historical_simulation,simulated,140.47,1.78,108.15,175.94,49.55,34.83,11.83
+2025-12-23 20:21:07.672684,Los Angeles,historical_simulation,simulated,109.14,1.11,58.89,88.04,42.63,72.62,7.39
+2025-12-23 20:21:11.092663,London,historical_simulation,simulated,50.26,1.0,25.01,36.94,27.07,43.86,2.9
+2025-12-23 20:21:14.599956,Tokyo,historical_simulation,simulated,61.96,1.0,30.32,48.66,22.48,44.37,4.28
+2025-12-24 20:21:00.879434,Delhi,historical_simulation,simulated,180.48,2.16,141.27,197.22,58.76,27.97,15.26
+2025-12-24 20:21:04.628247,Beijing,historical_simulation,simulated,160.52,1.8,115.56,179.53,50.22,36.24,12.65
+2025-12-24 20:21:07.672684,Los Angeles,historical_simulation,simulated,107.39,1.15,61.12,88.31,46.19,69.63,7.58
+2025-12-24 20:21:11.092663,London,historical_simulation,simulated,67.22,1.0,35.47,48.96,33.59,55.47,4.2
+2025-12-24 20:21:14.599956,Tokyo,historical_simulation,simulated,91.42,1.0,42.38,65.08,28.45,64.81,5.89
+2025-12-25 20:21:00.879434,Delhi,historical_simulation,simulated,302.69,3.37,268.29,356.55,99.29,50.45,25.44
+2025-12-25 20:21:04.628247,Beijing,historical_simulation,simulated,184.91,2.41,157.03,244.53,68.15,43.27,15.03
+2025-12-25 20:21:07.672684,Los Angeles,historical_simulation,simulated,115.25,1.38,65.08,98.14,49.59,87.12,8.3
+2025-12-25 20:21:11.092663,London,historical_simulation,simulated,64.9,1.0,32.83,45.98,33.88,51.85,4.07
+2025-12-25 20:21:14.599956,Tokyo,historical_simulation,simulated,76.87,1.0,35.35,53.48,25.63,56.59,5.18
+2025-12-26 20:21:00.879434,Delhi,historical_simulation,simulated,261.92,2.82,207.47,297.43,78.27,43.32,21.68
+2025-12-26 20:21:04.628247,Beijing,historical_simulation,simulated,221.47,2.93,183.0,279.23,75.22,57.42,18.22
+2025-12-26 20:21:07.672684,Los Angeles,historical_simulation,simulated,79.9,1.0,43.7,63.67,29.55,50.67,5.46
+2025-12-26 20:21:11.092663,London,historical_simulation,simulated,58.83,1.0,31.03,41.73,32.05,50.88,3.83
+2025-12-26 20:21:14.599956,Tokyo,historical_simulation,simulated,80.05,1.0,39.17,57.65,28.58,61.91,5.5
+2025-12-27 20:21:00.879434,Delhi,historical_simulation,simulated,172.67,2.0,136.0,195.98,55.07,26.91,14.26
+2025-12-27 20:21:04.628247,Beijing,historical_simulation,simulated,187.73,2.22,154.62,230.91,65.02,43.53,15.04
+2025-12-27 20:21:07.672684,Los Angeles,historical_simulation,simulated,80.2,1.0,45.61,73.91,31.76,55.54,6.03
+2025-12-27 20:21:11.092663,London,historical_simulation,simulated,50.63,1.0,27.19,36.08,27.73,42.09,3.11
+2025-12-27 20:21:14.599956,Tokyo,historical_simulation,simulated,55.37,1.0,29.03,39.71,19.47,40.6,3.54
+2025-12-28 20:21:00.879434,Delhi,historical_simulation,simulated,254.64,2.89,216.1,290.41,86.63,42.98,20.86
+2025-12-28 20:21:04.628247,Beijing,historical_simulation,simulated,171.28,2.03,136.37,220.61,55.95,38.54,13.97
+2025-12-28 20:21:07.672684,Los Angeles,historical_simulation,simulated,111.79,1.34,65.22,98.14,50.92,85.49,7.96
+2025-12-28 20:21:11.092663,London,historical_simulation,simulated,79.15,1.0,37.73,50.61,36.06,60.96,4.36
+2025-12-28 20:21:14.599956,Tokyo,historical_simulation,simulated,84.33,1.0,39.58,65.47,27.07,61.74,5.48
+2025-12-29 20:21:00.879434,Delhi,historical_simulation,simulated,207.71,2.19,163.47,235.35,65.8,34.95,16.42
+2025-12-29 20:21:04.628247,Beijing,historical_simulation,simulated,180.03,2.14,133.74,217.17,55.06,41.6,14.42
+2025-12-29 20:21:07.672684,Los Angeles,historical_simulation,simulated,109.65,1.26,61.44,90.2,46.83,78.32,7.71
+2025-12-29 20:21:11.092663,London,historical_simulation,simulated,53.82,1.0,27.88,42.84,31.07,43.98,3.74
+2025-12-29 20:21:14.599956,Tokyo,historical_simulation,simulated,83.11,1.0,44.79,63.59,26.31,62.21,5.38
+2025-12-30 20:21:00.879434,Delhi,historical_simulation,simulated,300.41,3.07,242.45,323.79,96.6,47.31,23.05
+2025-12-30 20:21:04.628247,Beijing,historical_simulation,simulated,153.09,1.76,120.02,192.17,52.43,35.72,12.85
+2025-12-30 20:21:07.672684,Los Angeles,historical_simulation,simulated,90.05,1.12,58.02,82.56,42.6,70.71,6.44
+2025-12-30 20:21:11.092663,London,historical_simulation,simulated,57.61,1.0,26.22,37.82,27.84,38.72,2.88
+2025-12-30 20:21:14.599956,Tokyo,historical_simulation,simulated,92.81,1.0,45.19,68.66,29.72,69.85,6.0
+2025-12-31 20:21:00.879434,Delhi,historical_simulation,simulated,320.03,3.47,271.72,354.24,108.74,52.2,25.48
+2025-12-31 20:21:04.628247,Beijing,historical_simulation,simulated,176.33,2.22,136.22,209.74,59.46,41.96,13.83
+2025-12-31 20:21:07.672684,Los Angeles,historical_simulation,simulated,76.38,1.0,43.74,65.19,33.74,55.35,5.5
+2025-12-31 20:21:11.092663,London,historical_simulation,simulated,70.25,1.0,33.9,50.06,34.47,58.38,4.45
+2025-12-31 20:21:14.598925,Tokyo,historical_simulation,simulated,61.86,1.0,33.97,41.99,21.31,46.56,4.22
+2026-01-01 20:21:00.879434,Delhi,historical_simulation,simulated,238.03,2.75,204.11,275.13,83.81,40.1,19.08
+2026-01-01 20:21:04.628247,Beijing,historical_simulation,simulated,184.36,2.15,165.78,213.66,63.02,45.45,14.5
+2026-01-01 20:21:07.672684,Los Angeles,historical_simulation,simulated,104.71,1.13,59.07,87.17,43.87,74.82,7.86
+2026-01-01 20:21:11.092663,London,historical_simulation,simulated,62.11,1.0,29.3,43.54,30.88,48.31,3.8
+2026-01-01 20:21:14.598925,Tokyo,historical_simulation,simulated,88.92,1.0,43.89,62.44,26.27,62.43,5.87
+2026-01-02 20:21:00.879434,Delhi,historical_simulation,simulated,210.92,2.55,182.05,232.79,68.5,38.63,18.92
+2026-01-02 20:21:04.628247,Beijing,historical_simulation,simulated,145.56,1.75,120.37,195.85,52.92,37.65,12.87
+2026-01-02 20:21:07.671653,Los Angeles,historical_simulation,simulated,86.11,1.0,50.96,73.83,39.79,61.07,6.3
+2026-01-02 20:21:11.092663,London,historical_simulation,simulated,83.9,1.0,41.47,58.61,41.81,66.53,4.91
+2026-01-02 20:21:14.598925,Tokyo,historical_simulation,simulated,68.65,1.0,37.54,55.95,24.1,50.41,4.62
+2026-01-03 20:21:00.879434,Delhi,historical_simulation,simulated,222.45,2.39,189.26,244.49,72.06,37.71,18.74
+2026-01-03 20:21:04.628247,Beijing,historical_simulation,simulated,234.94,2.89,175.59,280.06,77.09,54.95,18.28
+2026-01-03 20:21:07.671653,Los Angeles,historical_simulation,simulated,90.82,1.07,56.79,86.67,38.9,67.72,6.72
+2026-01-03 20:21:11.092663,London,historical_simulation,simulated,70.85,1.0,35.39,47.63,32.93,53.27,3.92
+2026-01-03 20:21:14.598925,Tokyo,historical_simulation,simulated,96.02,1.0,46.37,68.84,30.37,68.63,6.15
+2026-01-04 20:21:00.879434,Delhi,historical_simulation,simulated,205.41,2.28,160.06,217.23,70.93,32.65,17.81
+2026-01-04 20:21:04.628247,Beijing,historical_simulation,simulated,154.36,2.03,114.7,185.71,49.69,38.54,12.01
+2026-01-04 20:21:07.671653,Los Angeles,historical_simulation,simulated,84.91,1.0,44.64,63.26,34.25,54.33,5.27
+2026-01-04 20:21:11.092663,London,historical_simulation,simulated,62.2,1.0,30.15,44.61,32.75,52.65,3.95
+2026-01-04 20:21:14.598925,Tokyo,historical_simulation,simulated,88.36,1.0,43.96,70.09,29.15,67.77,5.82
+2026-01-05 20:21:00.879434,Delhi,historical_simulation,simulated,205.51,2.38,175.1,234.22,68.12,38.35,18.56
+2026-01-05 20:21:04.628247,Beijing,historical_simulation,simulated,200.66,2.14,150.61,234.77,59.05,43.32,14.94
+2026-01-05 20:21:07.671653,Los Angeles,historical_simulation,simulated,83.02,1.0,48.92,76.92,37.65,56.33,5.56
+2026-01-05 20:21:11.092663,London,historical_simulation,simulated,56.07,1.0,29.82,39.96,27.56,44.11,3.33
+2026-01-05 20:21:14.598925,Tokyo,historical_simulation,simulated,64.13,1.0,33.84,48.52,23.81,50.65,4.55
+2026-01-06 20:21:00.879434,Delhi,historical_simulation,simulated,241.72,2.74,196.8,266.75,82.57,41.12,19.59
+2026-01-06 20:21:04.628247,Beijing,historical_simulation,simulated,237.24,2.78,189.43,282.91,77.77,54.93,17.79
+2026-01-06 20:21:07.671653,Los Angeles,historical_simulation,simulated,90.14,1.04,51.58,77.85,40.93,63.6,6.31
+2026-01-06 20:21:11.092663,London,historical_simulation,simulated,79.12,1.0,38.7,54.13,39.46,60.9,4.56
+2026-01-06 20:21:14.598925,Tokyo,historical_simulation,simulated,90.01,1.0,38.87,67.22,29.15,66.16,5.44
+2026-01-07 20:21:00.879434,Delhi,historical_simulation,simulated,212.81,2.32,169.8,246.77,67.25,36.25,17.72
+2026-01-07 20:21:04.627186,Beijing,historical_simulation,simulated,177.99,2.2,139.6,192.17,56.55,36.38,13.9
+2026-01-07 20:21:07.671653,Los Angeles,historical_simulation,simulated,88.7,1.01,49.38,74.64,37.78,64.64,6.09
+2026-01-07 20:21:11.091591,London,historical_simulation,simulated,68.97,1.0,35.24,45.95,34.76,54.52,3.93
+2026-01-07 20:21:14.598925,Tokyo,historical_simulation,simulated,70.45,1.0,32.98,49.54,22.38,49.43,4.25
+2026-01-08 20:21:00.879434,Delhi,historical_simulation,simulated,178.28,1.94,148.69,185.3,60.31,28.0,14.8
+2026-01-08 20:21:04.627186,Beijing,historical_simulation,simulated,166.89,1.95,134.41,212.72,60.46,36.98,14.48
+2026-01-08 20:21:07.671653,Los Angeles,historical_simulation,simulated,74.45,1.0,44.3,67.64,33.19,56.61,5.13
+2026-01-08 20:21:11.091591,London,historical_simulation,simulated,69.45,1.0,32.74,48.27,34.58,56.0,3.88
+2026-01-08 20:21:14.598925,Tokyo,historical_simulation,simulated,83.08,1.0,41.78,67.14,28.93,59.6,5.7
+2026-01-09 20:21:00.879434,Delhi,historical_simulation,simulated,232.94,2.59,182.2,257.91,84.37,37.54,19.69
+2026-01-09 20:21:04.627186,Beijing,historical_simulation,simulated,232.8,2.79,189.96,295.15,82.99,59.56,19.87
+2026-01-09 20:21:07.671653,Los Angeles,historical_simulation,simulated,81.01,1.01,45.7,74.76,32.65,59.93,6.41
+2026-01-09 20:21:11.091591,London,historical_simulation,simulated,76.99,1.0,36.11,48.59,35.97,57.46,4.54
+2026-01-09 20:21:14.598925,Tokyo,historical_simulation,simulated,84.22,1.0,40.03,64.88,27.44,63.08,4.92
+2026-01-10 20:21:00.879434,Delhi,historical_simulation,simulated,269.29,2.75,217.21,289.52,80.79,44.94,22.13
+2026-01-10 20:21:04.627186,Beijing,historical_simulation,simulated,175.83,2.05,129.96,204.64,59.33,40.1,14.23
+2026-01-10 20:21:07.671653,Los Angeles,historical_simulation,simulated,105.85,1.19,56.77,87.61,44.99,75.57,7.74
+2026-01-10 20:21:11.091591,London,historical_simulation,simulated,74.82,1.0,32.21,51.78,33.75,51.16,4.19
+2026-01-10 20:21:14.598925,Tokyo,historical_simulation,simulated,83.77,1.0,44.15,70.11,29.13,65.86,5.66
+2026-01-11 20:21:00.878369,Delhi,historical_simulation,simulated,173.6,2.09,149.85,208.79,63.51,28.88,15.84
+2026-01-11 20:21:04.627186,Beijing,historical_simulation,simulated,226.23,2.68,189.22,260.22,76.93,54.62,18.45
+2026-01-11 20:21:07.671653,Los Angeles,historical_simulation,simulated,111.11,1.36,67.57,98.51,50.78,84.94,8.21
+2026-01-11 20:21:11.091591,London,historical_simulation,simulated,80.01,1.0,36.96,50.77,36.01,60.18,4.43
+2026-01-11 20:21:14.598925,Tokyo,historical_simulation,simulated,71.1,1.0,35.1,48.51,22.48,52.65,4.33
+2026-01-12 20:21:00.878369,Delhi,historical_simulation,simulated,234.49,2.3,192.04,252.06,70.74,40.29,18.25
+2026-01-12 20:21:04.627186,Beijing,historical_simulation,simulated,242.27,2.84,208.54,299.55,87.98,56.84,20.04
+2026-01-12 20:21:07.671653,Los Angeles,historical_simulation,simulated,104.53,1.08,55.43,87.51,41.97,71.67,6.98
+2026-01-12 20:21:11.091591,London,historical_simulation,simulated,56.31,1.0,27.01,39.22,28.54,43.85,3.66
+2026-01-12 20:21:14.598925,Tokyo,historical_simulation,simulated,98.2,1.0,50.69,71.74,31.57,70.99,6.77
+2026-01-13 20:21:00.878369,Delhi,historical_simulation,simulated,203.94,2.38,191.65,230.15,70.32,32.66,17.23
+2026-01-13 20:21:04.627186,Beijing,historical_simulation,simulated,150.98,1.84,125.35,169.0,49.65,33.42,11.79
+2026-01-13 20:21:07.671653,Los Angeles,historical_simulation,simulated,94.76,1.01,49.64,79.65,39.6,61.15,5.94
+2026-01-13 20:21:11.091591,London,historical_simulation,simulated,47.35,1.0,27.32,38.09,27.84,42.81,3.0
+2026-01-13 20:21:14.598925,Tokyo,historical_simulation,simulated,69.01,1.0,35.59,57.91,23.94,50.25,4.29
+2026-01-14 20:21:00.878369,Delhi,historical_simulation,simulated,236.05,2.73,211.69,295.65,86.15,41.89,22.19
+2026-01-14 20:21:04.627186,Beijing,historical_simulation,simulated,185.24,2.1,130.22,215.93,58.32,41.33,13.34
+2026-01-14 20:21:07.671653,Los Angeles,historical_simulation,simulated,69.2,1.0,37.06,56.84,29.35,52.22,4.81
+2026-01-14 20:21:11.091591,London,historical_simulation,simulated,61.02,1.0,29.29,39.55,30.68,50.74,3.37
+2026-01-14 20:21:14.598925,Tokyo,historical_simulation,simulated,75.65,1.0,36.46,55.17,24.56,53.4,4.7
+2026-01-15 20:21:00.878369,Delhi,historical_simulation,simulated,155.85,1.74,130.3,179.14,61.5,27.73,12.52
+2026-01-15 20:21:04.627186,Beijing,historical_simulation,simulated,211.56,2.38,159.83,230.12,66.98,43.1,16.0
+2026-01-15 20:21:07.671653,Los Angeles,historical_simulation,simulated,105.93,1.18,58.82,89.68,45.87,75.48,7.4
+2026-01-15 20:21:11.091591,London,historical_simulation,simulated,67.15,1.0,30.53,45.55,33.0,53.31,4.1
+2026-01-15 20:21:14.598925,Tokyo,historical_simulation,simulated,93.64,1.0,49.67,73.32,31.7,69.4,5.75
+2026-01-16 20:21:00.878369,Delhi,historical_simulation,simulated,226.55,2.33,176.02,251.15,71.47,38.01,16.59
+2026-01-16 20:21:04.627186,Beijing,historical_simulation,simulated,205.77,2.68,154.09,239.76,66.51,50.59,16.18
+2026-01-16 20:21:07.671653,Los Angeles,historical_simulation,simulated,93.69,1.12,54.54,85.17,41.52,64.16,6.97
+2026-01-16 20:21:11.091591,London,historical_simulation,simulated,61.67,1.0,31.57,42.96,31.37,46.3,3.6
+2026-01-16 20:21:14.598925,Tokyo,historical_simulation,simulated,81.82,1.0,37.8,58.76,26.99,64.67,5.52
+2026-01-17 20:21:00.878369,Delhi,historical_simulation,simulated,190.1,2.04,151.56,210.27,62.48,32.46,13.99
+2026-01-17 20:21:04.627186,Beijing,historical_simulation,simulated,235.08,2.85,189.84,282.07,77.16,55.85,18.74
+2026-01-17 20:21:07.671653,Los Angeles,historical_simulation,simulated,77.25,1.0,44.52,69.37,35.3,55.55,5.49
+2026-01-17 20:21:11.091591,London,historical_simulation,simulated,67.06,1.0,32.06,46.83,32.13,51.87,4.18
+2026-01-17 20:21:14.598925,Tokyo,historical_simulation,simulated,88.95,1.0,42.4,67.4,27.78,66.12,5.69
+2026-01-18 20:21:00.878369,Delhi,historical_simulation,simulated,319.98,3.52,274.2,356.05,110.54,55.04,26.55
+2026-01-18 20:21:04.627186,Beijing,historical_simulation,simulated,200.83,2.26,155.21,242.81,67.39,49.08,16.18
+2026-01-18 20:21:07.671653,Los Angeles,historical_simulation,simulated,82.79,1.0,45.99,70.87,38.29,58.66,5.82
+2026-01-18 20:21:11.091591,London,historical_simulation,simulated,70.3,1.0,34.71,48.5,34.04,59.27,4.14
+2026-01-18 20:21:14.598925,Tokyo,historical_simulation,simulated,74.84,1.0,39.56,55.1,26.16,56.16,5.29
+2026-01-19 20:21:00.878369,Delhi,historical_simulation,simulated,182.05,2.19,188.64,227.28,68.54,34.82,14.77
+2026-01-19 20:21:04.627186,Beijing,historical_simulation,simulated,213.67,2.42,168.61,257.6,66.21,49.02,16.62
+2026-01-19 20:21:07.671653,Los Angeles,historical_simulation,simulated,59.76,1.0,32.26,51.78,24.45,42.38,4.88
+2026-01-19 20:21:11.091591,London,historical_simulation,simulated,55.95,1.0,28.11,39.38,28.31,43.06,3.38
+2026-01-19 20:21:14.598925,Tokyo,historical_simulation,simulated,74.92,1.0,44.46,58.64,28.33,59.27,5.31
+2026-01-20 20:21:00.878369,Delhi,historical_simulation,simulated,295.21,3.11,248.36,320.66,90.12,47.83,21.78
+2026-01-20 20:21:04.627186,Beijing,historical_simulation,simulated,177.71,2.03,153.78,214.21,60.67,42.04,13.51
+2026-01-20 20:21:07.671653,Los Angeles,historical_simulation,simulated,78.92,1.0,45.37,71.69,31.68,55.3,5.52
+2026-01-20 20:21:11.091591,London,historical_simulation,simulated,67.84,1.0,34.31,48.48,32.25,52.66,4.21
+2026-01-20 20:21:14.598925,Tokyo,historical_simulation,simulated,75.32,1.0,37.14,53.54,24.37,56.15,4.42
+2026-01-21 20:21:00.878369,Delhi,historical_simulation,simulated,186.54,2.02,138.05,200.76,62.64,30.14,15.89
+2026-01-21 20:21:04.627186,Beijing,historical_simulation,simulated,160.57,1.97,132.61,174.84,54.22,37.61,12.04
+2026-01-21 20:21:07.671653,Los Angeles,historical_simulation,simulated,65.63,1.0,37.2,58.34,27.03,48.02,4.71
+2026-01-21 20:21:11.091591,London,historical_simulation,simulated,66.55,1.0,34.57,48.92,33.28,54.33,4.02
+2026-01-21 20:21:14.598925,Tokyo,historical_simulation,simulated,96.77,1.0,46.32,73.22,31.46,68.58,6.4
+2026-01-22 20:20:58.373977,Delhi,aqicn.org,https://aqicn.org/city/india/delhi/,24.0,201.0,,,,,
+2026-01-22 20:20:59.877588,Delhi,accuweather,https://www.accuweather.com/en/in/delhi/202396/air-quality-index/202396,255.0,,,,,,
+2026-01-22 20:21:00.878369,Delhi,historical_simulation,simulated,239.48,2.72,208.7,287.77,87.63,41.86,21.29
+2026-01-22 20:21:02.015969,Beijing,aqicn.org,https://aqicn.org/city/china/beijing/,24.0,201.0,,,,,
+2026-01-22 20:21:03.625984,Beijing,accuweather,https://www.accuweather.com/en/cn/beijing/106577/air-quality-index/106577,111.0,,,,,,
+2026-01-22 20:21:04.627186,Beijing,historical_simulation,simulated,181.34,2.07,149.6,211.15,59.25,42.86,14.58
+2026-01-22 20:21:05.303248,Los Angeles,aqicn.org,https://aqicn.org/city/usa/california/los-angeles/,,201.0,,,,,
+2026-01-22 20:21:06.670911,Los Angeles,accuweather,https://www.accuweather.com/en/us/los-angeles/90012/air-quality-index/347625,74.0,,,,,,
+2026-01-22 20:21:07.671653,Los Angeles,historical_simulation,simulated,90.64,1.01,51.73,78.29,39.47,62.37,6.88
+2026-01-22 20:21:08.452346,London,aqicn.org,https://aqicn.org/city/uk/england/london/,,201.0,,,,,
+2026-01-22 20:21:10.090710,London,accuweather,https://www.accuweather.com/en/gb/london/ec4a-2/air-quality-index/328328,54.0,,,,,,
+2026-01-22 20:21:11.091591,London,historical_simulation,simulated,54.93,1.0,27.2,41.0,27.77,44.76,3.27
+2026-01-22 20:21:12.159119,Tokyo,aqicn.org,https://aqicn.org/city/japan/tokyo/,24.0,201.0,,,,,
+2026-01-22 20:21:13.597841,Tokyo,accuweather,https://www.accuweather.com/en/jp/tokyo/226396/air-quality-index/226396,51.0,,,,,,
+2026-01-22 20:21:14.598925,Tokyo,historical_simulation,simulated,75.18,1.0,38.05,59.98,25.84,55.65,4.9
