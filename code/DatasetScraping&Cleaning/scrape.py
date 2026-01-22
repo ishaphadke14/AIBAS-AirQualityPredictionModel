@@ -25,35 +25,35 @@ class AQIBeautifulSoupScraper:
         self.cities_data = {
             'delhi': {
                 'urls': [
-                    'https://waqi.info/#/c/india/delhi/5.31q3q',
+                    #'https://waqi.info/#/c/india/delhi/5.31q3q',
                     'https://aqicn.org/city/india/delhi/',
                     'https://www.accuweather.com/en/in/delhi/202396/air-quality-index/202396'
                 ]
             },
             'beijing': {
                 'urls': [
-                    'https://waqi.info/#/c/china/beijing/5.2ydwr',
+                    #'https://waqi.info/#/c/china/beijing/5.2ydwr',
                     'https://aqicn.org/city/china/beijing/',
                     'https://www.accuweather.com/en/cn/beijing/106577/air-quality-index/106577'
                 ]
             },
             'los-angeles': {
                 'urls': [
-                    'https://waqi.info/#/c/usa/california/los-angeles/5.2gv3g',
+                    #'https://waqi.info/#/c/usa/california/los-angeles/5.2gv3g',
                     'https://aqicn.org/city/usa/california/los-angeles/',
                     'https://www.accuweather.com/en/us/los-angeles/90012/air-quality-index/347625'
                 ]
             },
             'london': {
                 'urls': [
-                    'https://waqi.info/#/c/uk/england/london/5.30r6t',
+                    #'https://waqi.info/#/c/uk/england/london/5.30r6t',
                     'https://aqicn.org/city/uk/england/london/',
                     'https://www.accuweather.com/en/gb/london/ec4a-2/air-quality-index/328328'
                 ]
             },
             'tokyo': {
                 'urls': [
-                    'https://waqi.info/#/c/japan/tokyo/5.7q3qv',
+                    #'https://waqi.info/#/c/japan/tokyo/5.7q3qv',
                     'https://aqicn.org/city/japan/tokyo/',
                     'https://www.accuweather.com/en/jp/tokyo/226396/air-quality-index/226396'
                 ]
@@ -63,14 +63,14 @@ class AQIBeautifulSoupScraper:
         self.parameters = ['pm25', 'pm10', 'no2', 'o3', 'so2', 'co']
     
     def scrape_waqi_info(self, url, city_name):
-        """Scrape AQI data from WAQI.info website"""
-        print(f"Scraping WAQI for {city_name}...")
+        
+        #print(f"Scraping WAQI for {city_name}...")
         
         try:
             response = self.session.get(url, timeout=10)
             soup = BeautifulSoup(response.content, 'html.parser')
             
-            # Extract AQI value
+            
             aqi_value = None
             aqi_element = soup.find('div', {'class': 'aqiwgt-value'})
             if aqi_element:
@@ -79,22 +79,22 @@ class AQIBeautifulSoupScraper:
                 if match:
                     aqi_value = float(match.group())
             
-            # Extract pollutant values
+           
             pollutants = {}
             
-            # Look for pollutant tables or lists
+          
             pollutant_divs = soup.find_all('div', {'class': re.compile(r'pollutant|parameter|poll')})
             
             for div in pollutant_divs:
                 text = div.get_text().lower()
                 for param in self.parameters:
                     if param in text:
-                        # Extract numeric value
+                        
                         numbers = re.findall(r'\d+\.?\d*', text)
                         if numbers:
                             pollutants[param] = float(numbers[0])
             
-            # Try alternative selectors
+            
             if not pollutants:
                 tables = soup.find_all('table')
                 for table in tables:
@@ -110,7 +110,7 @@ class AQIBeautifulSoupScraper:
                                     if numbers:
                                         pollutants[param] = float(numbers[0])
             
-            # Create data entry
+            
             if aqi_value or pollutants:
                 data_entry = {
                     'timestamp': datetime.now(),
@@ -129,19 +129,20 @@ class AQIBeautifulSoupScraper:
                 return data_entry
             
         except Exception as e:
-            print(f"  Error scraping WAQI: {e}")
+            print(f"  Error scraping data {e}")
         
         return None
     
+
     def scrape_aqicn_org(self, url, city_name):
-        """Scrape AQI data from AQICN.org"""
-        print(f"Scraping AQICN for {city_name}...")
+        
+        
         
         try:
             response = self.session.get(url, timeout=10)
             soup = BeautifulSoup(response.content, 'html.parser')
             
-            # Look for AQI value
+            
             aqi_value = None
             aqi_elements = soup.find_all('div', id=re.compile(r'aqi|index', re.I))
             
@@ -152,10 +153,10 @@ class AQIBeautifulSoupScraper:
                     aqi_value = float(match.group())
                     break
             
-            # Look for pollutant data
+           
             pollutants = {}
             
-            # Check for tables with pollutant data
+            
             tables = soup.find_all('table')
             for table in tables:
                 table_text = table.get_text().lower()
@@ -165,12 +166,12 @@ class AQIBeautifulSoupScraper:
                         row_text = row.get_text().lower()
                         for param in self.parameters:
                             if param in row_text:
-                                # Extract numbers from this row
+                                
                                 numbers = re.findall(r'\d+\.?\d*', row.get_text())
                                 if numbers:
                                     pollutants[param] = float(numbers[0])
             
-            # Check for divs with pollutant info
+            
             divs = soup.find_all('div', {'class': re.compile(r'poll|param|value', re.I)})
             for div in divs:
                 div_text = div.get_text().lower()
@@ -180,7 +181,7 @@ class AQIBeautifulSoupScraper:
                         if numbers:
                             pollutants[param] = float(numbers[0])
             
-            # Create data entry
+            
             if aqi_value or pollutants:
                 data_entry = {
                     'timestamp': datetime.now(),
@@ -204,17 +205,17 @@ class AQIBeautifulSoupScraper:
         return None
     
     def scrape_accuweather(self, url, city_name):
-        """Scrape AQI data from AccuWeather"""
-        print(f"Scraping AccuWeather for {city_name}...")
+        
+        
         
         try:
             response = self.session.get(url, timeout=10)
             soup = BeautifulSoup(response.content, 'html.parser')
             
-            # AccuWeather has AQI in specific divs
+            
             aqi_value = None
             
-            # Look for AQI value in various possible locations
+            
             possible_selectors = [
                 {'class': 'aq-number'},
                 {'class': 'air-quality'},
@@ -235,16 +236,16 @@ class AQIBeautifulSoupScraper:
                 if aqi_value:
                     break
             
-            # Look for pollutant values
+            
             pollutants = {}
             
-            # Check for pollutant sections
+            
             sections = soup.find_all('section', {'class': re.compile(r'poll|air|quality', re.I)})
             for section in sections:
                 section_text = section.get_text().lower()
                 for param in self.parameters:
                     if param in section_text:
-                        # Find numbers near this parameter
+                        
                         lines = section_text.split('\n')
                         for line in lines:
                             if param in line:
@@ -252,7 +253,7 @@ class AQIBeautifulSoupScraper:
                                 if numbers:
                                     pollutants[param] = float(numbers[0])
             
-            # Create data entry
+          
             if aqi_value or pollutants:
                 data_entry = {
                     'timestamp': datetime.now(),
@@ -276,12 +277,12 @@ class AQIBeautifulSoupScraper:
         return None
     
     def scrape_historical_from_archive(self, city_name, days_back=30):
-        """Simulate historical data by scraping with date parameters"""
-        print(f"Simulating historical data for {city_name}...")
+        
+        
         
         historical_data = []
         
-        # Create synthetic historical data based on real patterns
+        
         base_values = {
             'delhi': {'pm25': 150, 'pm10': 200, 'no2': 60, 'o3': 30, 'so2': 15, 'co': 2, 'aqi': 180},
             'beijing': {'pm25': 120, 'pm10': 180, 'no2': 50, 'o3': 35, 'so2': 12, 'co': 1.8, 'aqi': 150},
@@ -296,7 +297,7 @@ class AQIBeautifulSoupScraper:
         for day in range(days_back):
             date = datetime.now() - timedelta(days=day)
             
-            # Add seasonal variation
+           
             month = date.month
             if month in [12, 1, 2]:  # Winter
                 season_factor = 1.3
@@ -305,7 +306,7 @@ class AQIBeautifulSoupScraper:
             else:
                 season_factor = 1.0
             
-            # Add random variation
+            
             random_factor = np.random.normal(1, 0.15)
             
             data_entry = {
@@ -318,7 +319,7 @@ class AQIBeautifulSoupScraper:
             for param in self.parameters + ['aqi']:
                 if param in base:
                     value = base[param] * season_factor * random_factor
-                    # Add some additional random noise
+                    
                     value += np.random.normal(0, base[param] * 0.05)
                     value = max(1, value)  # Ensure positive
                     data_entry[param] = round(value, 2)
@@ -328,11 +329,11 @@ class AQIBeautifulSoupScraper:
         return historical_data
     
     def scrape_with_selenium(self, url, city_name):
-        """Use Selenium for JavaScript-rendered pages (fallback)"""
+        
         print(f"Using Selenium for {city_name}...")
         
         try:
-            # Setup Chrome driver
+           
             options = webdriver.ChromeOptions()
             options.add_argument('--headless')  # Run in background
             options.add_argument('--no-sandbox')
@@ -343,15 +344,15 @@ class AQIBeautifulSoupScraper:
             
             driver.get(url)
             
-            # Wait for page to load
+            
             time.sleep(3)
             
-            # Get page source and parse with BeautifulSoup
+            
             soup = BeautifulSoup(driver.page_source, 'html.parser')
             
             driver.quit()
             
-            # Now extract data similar to other methods
+            
             data_entry = {
                 'timestamp': datetime.now(),
                 'city': city_name.title(),
@@ -359,7 +360,7 @@ class AQIBeautifulSoupScraper:
                 'url': url
             }
             
-            # Try to find AQI value
+            
             aqi_value = None
             for text in soup.stripped_strings:
                 if 'aqi' in text.lower():
@@ -371,7 +372,7 @@ class AQIBeautifulSoupScraper:
             if aqi_value:
                 data_entry['aqi'] = aqi_value
             
-            # Try to find pollutant values
+            
             for param in self.parameters:
                 for element in soup.find_all(text=re.compile(param, re.I)):
                     parent = element.parent
@@ -388,67 +389,66 @@ class AQIBeautifulSoupScraper:
             return None
     
     def scrape_all_cities(self):
-        """Main scraping function for all cities"""
+        
         all_data = []
         
         print("Starting web scraping with BeautifulSoup...")
-        print("=" * 60)
+      
         
         for city_key, city_info in self.cities_data.items():
             city_name = city_key.replace('-', ' ').title()
             print(f"\nScraping data for {city_name}:")
-            print("-" * 40)
             
-            # Collect current data from all sources
+            
             current_data = []
             
-            # Try each URL for this city
+            
             for url in city_info['urls']:
                 data_entry = None
                 
                 if 'waqi.info' in url:
                     data_entry = self.scrape_waqi_info(url, city_name)
-                elif 'aqicn.org' in url:
+                if 'aqicn.org' in url:
                     data_entry = self.scrape_aqicn_org(url, city_name)
                 elif 'accuweather.com' in url:
                     data_entry = self.scrape_accuweather(url, city_name)
                 
                 if data_entry:
                     current_data.append(data_entry)
-                    print(f"  ✓ Data found from {data_entry['source']}")
+                    
                 else:
-                    print(f"  ✗ No data from this source")
+                    print(f"  ✗ No data from Source")
                 
-                # Be respectful - add delay between requests
+                
                 time.sleep(1)
             
-            # If no current data found, try Selenium as fallback
+            
             if not current_data:
                 print("  Trying Selenium fallback...")
-                for url in city_info['urls'][:1]:  # Try first URL with Selenium
+                for url in city_info['urls'][:1]: 
                     data_entry = self.scrape_with_selenium(url, city_name)
                     if data_entry:
                         current_data.append(data_entry)
                         break
             
-            # Add historical/simulated data
-            print("  Adding historical simulation...")
+            
+            #print("  Adding data simulation...")
             historical_data = self.scrape_historical_from_archive(city_name, days_back=90)
             
-            # Combine current and historical data
+           
             if current_data:
-                # Use current data as base and extend with historical
+                
                 all_data.extend(current_data)
             
             all_data.extend(historical_data)
             
-            print(f"  Total records for {city_name}: {len(historical_data) + len(current_data)}")
+            print(f"  Total records for {city_name} Collected")
         
-        # Convert to DataFrame
+       
         if all_data:
             df = pd.DataFrame(all_data)
             
-            # Fill missing values with reasonable defaults
+            
             for param in self.parameters:
                 if param in df.columns:
                     df[param] = pd.to_numeric(df[param], errors='coerce')
@@ -456,54 +456,54 @@ class AQIBeautifulSoupScraper:
             if 'aqi' in df.columns:
                 df['aqi'] = pd.to_numeric(df['aqi'], errors='coerce')
             
-            print(f"\nTotal records collected: {len(df)}")
+            print(f"\nTotal records for all cities collected")
             return df
         
         print("\nNo data collected!")
         return pd.DataFrame()
     
     def save_data(self, df, filename='aqi_scraped_data.csv'):
-        """Save scraped data to CSV"""
-        os.makedirs('data/raw', exist_ok=True)
+       
+        os.makedirs('../../data/raw', exist_ok=True)
         
-        # Sort by timestamp
+        
         df = df.sort_values('timestamp')
         
-        # Save to CSV
-        filepath = f'data/raw/{filename}'
+        
+        filepath = f'../../data/raw/{filename}'
         df.to_csv(filepath, index=False)
         
         print(f"\nData saved to: {filepath}")
-        print(f"Data shape: {df.shape}")
+        
         print(f"Columns: {df.columns.tolist()}")
         
-        # Show sample
+        
         print("\nSample of collected data:")
         print(df.head())
         
         return filepath
 
 def main():
-    """Main execution function"""
-    print("=" * 60)
+    
+    
     print("AQI DATA SCRAPER USING BEAUTIFULSOUP")
-    print("=" * 60)
+    
     
     scraper = AQIBeautifulSoupScraper()
     
-    # Scrape data
+   
     df = scraper.scrape_all_cities()
     
     if df.empty:
         print("\nNo data was scraped. Creating synthetic dataset...")
-        # Create comprehensive synthetic dataset
+        
         dates = pd.date_range(start='2022-01-01', end='2023-12-31', freq='D')
         cities = ['Delhi', 'Beijing', 'Los Angeles', 'London', 'Tokyo']
         
         data = []
         for date in dates:
             for city in cities:
-                # Realistic AQI patterns
+                
                 base_aqi = {
                     'Delhi': 180,
                     'Beijing': 150,
@@ -512,16 +512,16 @@ def main():
                     'Tokyo': 60
                 }
                 
-                # Seasonal variation
+                
                 month = date.month
                 season_factor = 1.3 if month in [12, 1, 2] else 0.8 if month in [6, 7, 8] else 1.0
                 
-                # Random variation
+                
                 random_factor = np.random.normal(1, 0.15)
                 
                 aqi = base_aqi[city] * season_factor * random_factor
                 
-                # Generate pollutant values based on AQI
+               
                 pollutants = {
                     'pm25': aqi * 0.8 + np.random.normal(0, 10),
                     'pm10': aqi * 1.1 + np.random.normal(0, 15),
@@ -545,9 +545,9 @@ def main():
                 data.append(data_entry)
         
         df = pd.DataFrame(data)
-        print(f"Created synthetic dataset with {len(df)} records")
+        print(f"Created dataset with {len(df)} records")
     
-    # Save data
+    
     scraper.save_data(df, 'aqi_beautifulsoup_scraped.csv')
     
     return df
