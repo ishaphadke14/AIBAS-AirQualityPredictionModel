@@ -1,0 +1,2 @@
+total_epochs,final_train_loss,final_val_loss,final_train_mae,final_val_mae
+65,0.014648600481450558,0.07860002666711807,0.0901140421628952,0.1392536759376526

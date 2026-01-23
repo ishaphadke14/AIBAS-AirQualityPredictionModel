@@ -79,8 +79,23 @@ r2 = r2_score(y_test_actual, y_pred)
 metrics = {'mse': mse, 'rmse': rmse, 'mae': mae, 'r2': r2}
 with open('../Models/ai_performance_metrics.json', 'w') as f:
     json.dump(metrics, f, indent=4)
+def save_training_report(history, path='../../documentation/'):
+    report = {
+        'total_epochs': len(history.history['loss']),
+        'final_train_loss': history.history['loss'][-1],
+        'final_val_loss': history.history['val_loss'][-1],
+        'final_train_mae': history.history['mae'][-1],
+        'final_val_mae': history.history['val_mae'][-1]
+    }
+
+    pd.DataFrame(report, index=[0]).to_csv(f'{path}/ai_training_report.csv', mode='a', index=False)
+    print("Training Report Saved")
+
 
 print(f"MSE: {mse:.4f}, RMSE: {rmse:.4f}, MAE: {mae:.4f}, R²: {r2:.4f}")
+save_training_report(history, path='../../documentation/')
+
+
 
 
 def plot_training_curves(history):

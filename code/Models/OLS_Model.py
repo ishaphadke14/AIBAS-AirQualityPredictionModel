@@ -10,129 +10,121 @@ import json
 import numpy as np
 
 
-# ------------------------------
-# Paths
-# ------------------------------
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-DATA_DIR = os.path.join(BASE_DIR, 'data', 'processed')
-DOCS_DIR = os.path.join(BASE_DIR, 'documentation')
-MODELS_DIR = os.path.join(BASE_DIR, 'code', 'Models')
+train_df = pd.read_csv(r"..\..\data\processed\training_data.csv")
+train_df.shape
 
-train_path = os.path.join(DATA_DIR, 'training_data.csv')
-test_path  = os.path.join(DATA_DIR, 'test_data.csv')
+y_train = train_df["aqi"]
+X_train = train_df.drop(columns=["aqi"])
 
-# ------------------------------
-# Load data
-# ------------------------------
-train_data = pd.read_csv(train_path)
-test_data  = pd.read_csv(test_path)
+X_train = sm.add_constant(X_train)
 
-X_train = train_data.drop('aqi', axis=1)
-y_train = train_data['aqi']
 
-X_test = test_data.drop('aqi', axis=1)
-y_test = test_data['aqi']
+ols_model = sm.OLS(y_train, X_train).fit()
+print(ols_model.summary())
 
-# ------------------------------
-# Standardize numeric features
-# ------------------------------
-numeric_cols = X_train.select_dtypes(include=['float64', 'int64']).columns
-scaler = StandardScaler()
-X_train[numeric_cols] = scaler.fit_transform(X_train[numeric_cols])
-X_test[numeric_cols]  = scaler.transform(X_test[numeric_cols])
 
-# ------------------------------
-# Add constant for intercept
-# ------------------------------
-X_train_sm = sm.add_constant(X_train)
-X_test_sm  = sm.add_constant(X_test)
+with open("currentOLSsolution.pkl", "wb") as file:
+    pickle.dump(ols_model, file)
 
-# ------------------------------
-# Fit OLS model
-# ------------------------------
-ols_model = sm.OLS(y_train, X_train_sm).fit()
+print("OLS model saved as 'currentOLSsolution.pkl'")
 
-# ------------------------------
-# Predictions
-# ------------------------------
-y_pred = ols_model.predict(X_test_sm)
 
-# ------------------------------
-# Metrics
-# ------------------------------
-mse  = mean_squared_error(y_test, y_pred)
-rmse = mse ** 0.5
-mae  = mean_absolute_error(y_test, y_pred)
-r2   = r2_score(y_test, y_pred)
+with open("currentOLSsolution.pkl", "rb") as file:
+    loaded_model = pickle.load(file)
 
-metrics = {'mse': mse, 'rmse': rmse, 'mae': mae, 'r2': r2}
-os.makedirs(DOCS_DIR, exist_ok=True)
-with open(os.path.join(DOCS_DIR, 'ols_performance_metrics.json'), 'w') as f:
-    json.dump(metrics, f, indent=4)
+test_df = pd.read_csv(r"..\..\data\processed\test_data.csv")
 
-print("OLS Model metrics:", metrics)
+X_test = test_df.drop(columns=["aqi"])
+X_test = sm.add_constant(X_test)
+y_test = test_df["aqi"]
 
-# ------------------------------
-# Save OLS model as pickle
-# ------------------------------
-os.makedirs(MODELS_DIR, exist_ok=True)
-with open(os.path.join(MODELS_DIR, 'currentOLSsolution.pkl'), 'wb') as f:
-    pickle.dump(ols_model, f)
-print("OLS model saved at:", os.path.join(MODELS_DIR, 'currentOLSsolution.pkl'))
 
-# ------------------------------
-# Diagnostic Plots
-# ------------------------------
+y_pred = loaded_model.predict(X_test)
+print(y_pred)
+
+
+plt.figure(figsize=(8, 6))
+sns.regplot(
+    x=y_test,
+    y=y_pred,
+    scatter_kws={"alpha": 0.5},
+    line_kws={"color": "red"},
+    ci=None
+)
+
+plt.xlabel("Actual AQI")
+plt.ylabel("Predicted AQI")
+plt.title("Scatter Plot of Actual vs Predicted AQI (OLS)")
+plt.grid(True)
+
+plt.savefig("../../documentation/scatter_regression_plot_OLSModel.png", dpi=300)
+
+
 residuals = y_test - y_pred
-standardized_residuals = (residuals - residuals.mean()) / residuals.std()
+standardized_residuals = (residuals - np.mean(residuals)) / np.std(residuals)
 
-# Leverage & Cook's distance
-X = sm.add_constant(np.column_stack([np.ones_like(y_pred), y_pred]))
+
+X = X_test.values
 hat_matrix = X @ np.linalg.inv(X.T @ X) @ X.T
 leverage = np.diag(hat_matrix)
-cooks_d = (standardized_residuals**2) * leverage / (X.shape[1] * (1 - leverage)**2)
 
-# Residuals vs Fitted
-plt.figure(figsize=(12, 10))
-plt.subplot(2, 2, 1)
-plt.scatter(y_pred, residuals, alpha=0.5)
-plt.axhline(0, color='r', linestyle='--')
-plt.xlabel('Fitted Values'); plt.ylabel('Residuals')
-plt.title('Residuals vs Fitted')
-plt.grid(True)
+cooks_d = (standardized_residuals ** 2) * leverage / (X.shape[1] * (1 - leverage) ** 2)
 
-# Scale-Location
-plt.subplot(2, 2, 2)
-plt.scatter(y_pred, np.sqrt(np.abs(standardized_residuals)), alpha=0.5)
-plt.xlabel('Fitted Values'); plt.ylabel('√|Standardized Residuals|')
-plt.title('Scale-Location')
-plt.grid(True)
+fig, axes = plt.subplots(2, 2, figsize=(12, 10))
 
-# Q-Q plot
-plt.subplot(2, 2, 3)
-sm.qqplot(standardized_residuals, line='45', fit=True, alpha=0.5, ax=plt.gca())
-plt.title('Normal Q-Q Plot')
+# 1. Residual vs Fitted
+axes[0, 0].scatter(y_pred, residuals, alpha=0.5)
+axes[0, 0].axhline(y=0, color="r", linestyle="--")
+axes[0, 0].set_title("Residual vs Fitted Values")
+axes[0, 0].set_xlabel("Fitted Values")
+axes[0, 0].set_ylabel("Residuals")
 
-# Residuals vs Leverage
-plt.subplot(2, 2, 4)
-scatter = plt.scatter(leverage, standardized_residuals, alpha=0.5, c=cooks_d, cmap='viridis')
-plt.xlabel('Leverage'); plt.ylabel('Standardized Residuals')
-plt.title('Residuals vs Leverage')
-cbar = plt.colorbar(scatter)
-cbar.set_label("Cook's Distance")
+# 2. Scale-Location
+sqrt_abs_resid = np.sqrt(np.abs(standardized_residuals))
+axes[0, 1].scatter(y_pred, sqrt_abs_resid, alpha=0.5)
+axes[0, 1].set_title("Scale-Location (Sqrt Standardized Residuals vs Fitted)")
+axes[0, 1].set_xlabel("Fitted Values")
+axes[0, 1].set_ylabel("√|Standardized Residuals|")
+
+# 3. Q-Q plot
+sm.qqplot(standardized_residuals, line="45", fit=True, ax=axes[1, 0])
+axes[1, 0].set_title("Normal Q-Q Plot")
+axes[1, 0].set_xlabel("Theoretical Quantiles")
+axes[1, 0].set_ylabel("Standardized Residuals")
+
+# 4. Residual vs Leverage
+scatter = axes[1, 1].scatter(
+    leverage,
+    standardized_residuals,
+    alpha=0.5,
+    c=cooks_d,
+    cmap="viridis"
+)
+
+axes[1, 1].set_title("Residual vs Leverage")
+axes[1, 1].set_xlabel("Leverage")
+axes[1, 1].set_ylabel("Standardized Residuals")
+
+
+x = np.linspace(min(leverage), max(leverage), 50)
+for c in [0.5, 1]:
+    axes[1, 1].plot(
+        x,
+        np.sqrt((c * X.shape[1] * (1 - x) ** 2) / x),
+        linestyle="--",
+        color="red",
+        label=f"Cook's D={c}"
+    )
+    axes[1, 1].plot(
+        x,
+        -np.sqrt((c * X.shape[1] * (1 - x) ** 2) / x),
+        linestyle="--",
+        color="red"
+    )
+
+axes[1, 1].legend()
+fig.colorbar(scatter, ax=axes[1, 1], label="Cook's Distance")
 
 plt.tight_layout()
-plt.savefig(os.path.join(DOCS_DIR, 'ols_diagnostic_plots.png'), dpi=300)
-plt.close()
-print("Diagnostic plots saved at:", os.path.join(DOCS_DIR, 'ols_diagnostic_plots.png'))
-
-# ------------------------------
-# Scatter plot: Predicted vs Actual
-# ------------------------------
-plt.figure(figsize=(8,6))
-sns.regplot(x=y_test, y=y_pred, scatter_kws={'alpha':0.5}, line_kws={'color':'red'}, ci=None)
-plt.xlabel('Actual AQI'); plt.ylabel('Predicted AQI'); plt.title('Predicted vs Actual AQI')
-plt.grid(True)
-plt.savefig(os.path.join(DOCS_DIR, 'ols_scatter_regression.png'), dpi=300)
-plt.close()
-print("Scatter regression plot saved at:", os.path.join(DOCS_DIR, 'ols_scatter_regression.png'))
+plt.savefig("../../documentation/diagnostic_plots_OLSModel.png", dpi=300)
+plt.show()
