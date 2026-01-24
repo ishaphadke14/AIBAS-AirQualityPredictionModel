@@ -1,7 +1,7 @@
 
 version: '3.9'
 services:
-  activation_base:
+  knowledge_base:
     build:
       context: ../../  # Set the build context to the project root
       dockerfile: images/knowledgeBase_AirQualityIndexPredictionModel/Dockerfile

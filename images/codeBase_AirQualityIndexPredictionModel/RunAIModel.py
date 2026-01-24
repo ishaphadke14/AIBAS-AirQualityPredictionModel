@@ -1,54 +1,42 @@
 import numpy as np
 import pandas as pd
 import tensorflow as tf
-import pickle
+import joblib
 
-
-tf.config.set_visible_devices([], 'GPU')
-
+tf.config.set_visible_devices([], 'GPU')  # Disable GPU
 
 ACTIVATION_DATA_PATH = "/tmp/activationBase/activation_data.csv"
-MODEL_PATH = "/tmp/knowledgeBase/currentAiSolution.keras"
-SCALER_X_PATH = "/tmp/knowledgeBase/scaler_X.pkl"
-SCALER_Y_PATH = "/tmp/knowledgeBase/scaler_y.pkl"
+MODEL_PATH = "/tmp/knowledgeBase/currentAiSolution.h5"
 
+# Read activation data
 activation_data = pd.read_csv(ACTIVATION_DATA_PATH)
 
-print("Activation data loaded")
-#print("Columns:", activation_data.columns.tolist())
-#print("Shape:", activation_data.shape)
-
-
+# Remove 'aqi' column if it exists (target variable shouldn't be in input)
 if "aqi" in activation_data.columns:
     activation_data = activation_data.drop(columns=["aqi"])
+   
+scaler_X = joblib.load('/tmp/knowledgeBase/scaler_X.pkl')
+X_activation = scaler_X.transform(activation_data.values)
 
+print("Activation input shape:", X_activation.shape)
 
-with open(SCALER_X_PATH, "rb") as f:
-    scaler_X = pickle.load(f)
-
-with open(SCALER_Y_PATH, "rb") as f:
-    scaler_y = pickle.load(f)
-
-print("Scalers loaded successfully")
-
-X_activation_scaled = scaler_X.transform(activation_data.values)
-print("Activation input shape:", X_activation_scaled.shape)
-
-
+# Load model with safe_mode=False to handle version differences
 model = tf.keras.models.load_model(MODEL_PATH, compile=False)
-
 print("ANN model loaded")
 print("Expected input shape:", model.input_shape)
 
-y_pred_scaled = model.predict(X_activation_scaled)
+scaler_y = joblib.load('/tmp/knowledgeBase/scaler_y.pkl')
+# Make predictions
+y_pred = model.predict(X_activation).flatten()
 
+pred_aqi = scaler_y.inverse_transform(y_pred.reshape(-1, 1)).flatten()
 
-y_pred = scaler_y.inverse_transform(y_pred_scaled).flatten()
-
-
+# Prepare results
 results = activation_data.copy()
-results["predicted_aqi"] = y_pred
+results["predicted_aqi"] = pred_aqi
 
 print("Predicted AQI values:")
 print(results[["predicted_aqi"]].head())
 
+# If you want just the first prediction like your original code:
+print(f"\nFirst Predicted AQI: {round(pred_aqi[0], 2)}")

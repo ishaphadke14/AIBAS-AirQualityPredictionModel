@@ -1,6 +1,6 @@
 version: '3.9'
 services:
-  activation_base:
+  code_base:
     build:
       context: ../../  # Set the build context to the project root
       dockerfile: images/codeBase_AirQualityIndexPredictionModel/Dockerfile

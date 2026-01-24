@@ -11,6 +11,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 import os
 import json
+import joblib
 
 
 train_data = pd.read_csv('../../data/processed/training_data.csv')
@@ -32,6 +33,9 @@ X_test = scaler_X.transform(X_test_raw)
 y_train = scaler_y.fit_transform(y_train_raw.reshape(-1, 1)).flatten()
 y_test = scaler_y.transform(y_test_raw.reshape(-1, 1)).flatten()
 
+
+joblib.dump(scaler_X, '../Models/scaler_X.pkl')
+joblib.dump(scaler_y, '../Models/scaler_y.pkl')
 def build_model(input_dim):
     model = keras.Sequential([
         layers.Input(shape=(input_dim,)),
@@ -63,8 +67,8 @@ history = model.fit(
 
 
 
-model.save('../Models/currentAiSolution.keras')
-
+#model.save('../Models/currentAiSolution.keras')
+model.save('../Models/currentAiSolution.h5', save_format='h5')
 
 y_pred_scaled = model.predict(X_test).flatten()
 y_pred = scaler_y.inverse_transform(y_pred_scaled.reshape(-1, 1)).flatten()

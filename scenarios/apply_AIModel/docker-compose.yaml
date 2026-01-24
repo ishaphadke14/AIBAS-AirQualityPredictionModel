@@ -1,0 +1,40 @@
+version: "3.0"
+services:
+  activation_base:
+    
+    image: isha1401/activationbase_airqualityindexpredictionmodel
+    volumes:
+       - ai_system:/tmp
+    command:
+    - sh
+    - "-c"
+    - |
+      rm -rf /tmp/activationBase/ && cp -r /activationBase/ /tmp/;
+  knowledge_base:
+    
+    image: isha1401/knowledgebase_airqualityindexpredictionmodel
+    volumes:
+       - ai_system:/tmp
+    command:
+    - sh
+    - "-c"
+    - |
+      rm -rf /tmp/knowledgeBase/ && cp -r /knowledgeBase/ /tmp/;
+
+  code_base:
+    
+    image: isha1401/codebase_airqualityindexpredictionmodel
+    volumes:
+       - ai_system:/tmp
+    depends_on:
+      - "knowledge_base"
+      - "activation_base"
+    command:
+    - sh
+    - "-c"
+    - |
+      rm -rf /tmp/codeBase/ && cp -r /codeBase/ /tmp/;
+      python /codeBase/RunAIModel.py;
+volumes:
+  ai_system:
+    external: true
