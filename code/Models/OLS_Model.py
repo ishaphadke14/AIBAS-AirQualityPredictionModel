@@ -8,8 +8,6 @@ import seaborn as sns
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 
 
-# Paths
-
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA_DIR = os.path.join(BASE_DIR, "data", "processed")
 DOCS_DIR = os.path.join(BASE_DIR, "documentation")
@@ -38,7 +36,7 @@ X_test  = sm.add_constant(X_test)
 # Train OLS model
 
 ols_model = sm.OLS(y_train, X_train).fit()
-print(ols_model.summary())
+#print(ols_model.summary())
 
 
 # Predictions & metrics

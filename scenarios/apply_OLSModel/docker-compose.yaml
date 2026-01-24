@@ -1,7 +1,7 @@
 version: "3.0"
 services:
   activation_base:
-    image: activationbase_airqualityindexpredictionmodel
+    image: isha1401/activationbase_airqualityindexpredictionmodel
     volumes:
        - ai_system:/tmp
     command:
@@ -11,7 +11,7 @@ services:
       rm -rf /tmp/activationBase/ && cp -r /activationBase/ /tmp/;
   knowledge_base:
     
-    image: knowledgebase_airqualityindexpredictionmodel
+    image: isha1401/knowledgebase_airqualityindexpredictionmodel
     volumes:
        - ai_system:/tmp
     command:
@@ -22,7 +22,7 @@ services:
 
   code_base:
 
-    image: codebase_airqualityindexpredictionmodel
+    image: isha1401/codebase_airqualityindexpredictionmodel
     volumes:
        - ai_system:/tmp
     depends_on:

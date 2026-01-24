@@ -35,4 +35,6 @@ output["predicted_aqi"] = predictions
 print("Predictions completed")
 print(output[["predicted_aqi"]].head())
 
+print(f"\nFirst Predicted AQI: {round(predictions[0], 2)}")
+
 
